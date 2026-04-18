@@ -3,19 +3,26 @@
 import { useEffect, useState } from "react";
 import { acquisitionSources } from "@/lib/data";
 
-export default function HeroSourceBars() {
-  const [widths, setWidths] = useState<number[]>(acquisitionSources.map(() => 0));
-  const [phase, setPhase] = useState<boolean[]>(acquisitionSources.map(() => true));
+// Gradients hardcodés pour éviter la suppression par Tailwind (purge des classes dynamiques)
+const GRADIENTS = [
+  "linear-gradient(to right, #3b82f6, #818cf8)",
+  "linear-gradient(to right, #22d3ee, #2dd4bf)",
+  "linear-gradient(to right, #34d399, #4ade80)",
+];
 
-  // Croissance initiale
+export default function HeroSourceBars() {
+  // false = réduit (0%), true = plein (100%)
+  const [phase, setPhase] = useState<boolean[]>(acquisitionSources.map(() => false));
+
+  // Croissance initiale : 0 → pleine largeur
   useEffect(() => {
     const t = setTimeout(() => {
-      setWidths(acquisitionSources.map((s) => s.value));
-    }, 400);
+      setPhase(acquisitionSources.map(() => true));
+    }, 350);
     return () => clearTimeout(t);
   }, []);
 
-  // Oscillation en boucle par barre
+  // Oscillation en boucle
   useEffect(() => {
     const timers = acquisitionSources.map((_, i) =>
       setInterval(() => {
@@ -24,15 +31,10 @@ export default function HeroSourceBars() {
           next[i] = !next[i];
           return next;
         });
-      }, 1800 + i * 400),
+      }, 1800 + i * 350),
     );
     return () => timers.forEach(clearInterval);
   }, []);
-
-  const getWidth = (i: number) => {
-    const full = acquisitionSources[i].value;
-    return phase[i] ? full : Math.round(full * 0.5);
-  };
 
   return (
     <div className="space-y-3">
@@ -44,9 +46,11 @@ export default function HeroSourceBars() {
           </div>
           <div className="h-3 overflow-hidden rounded-full bg-[#173451]">
             <div
-              className={`h-full rounded-full bg-gradient-to-r ${source.color}`}
               style={{
-                width: `${getWidth(i)}%`,
+                height: "100%",
+                borderRadius: "9999px",
+                background: GRADIENTS[i],
+                width: phase[i] ? `${source.value}%` : `${Math.round(source.value * 0.48)}%`,
                 transition: "width 1.1s cubic-bezier(0.22, 1, 0.36, 1)",
               }}
             />
