@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import FloatingAssistant from "@/components/FloatingAssistant";
 import ContactMultiStepForm from "@/components/ContactMultiStepForm";
-import { contact } from "@/lib/data";
+import { contact, socialLinks } from "@/lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -37,13 +37,6 @@ const process = [
     text: "Site en ligne sous 15 jours. Premiers leads qualifiés sous 4 semaines.",
     color: "emerald",
   },
-];
-
-const socialLinks = [
-  { label: "LinkedIn", href: "#" },
-  { label: "Facebook", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "TikTok", href: "#" },
 ];
 
 const stepColorCls: Record<string, string> = {
@@ -134,11 +127,13 @@ export default function ContactPage() {
                   <div className="mt-5 flex gap-2">
                     {socialLinks.map((s) => (
                       <a
-                        key={s.label}
+                        key={s.key}
                         href={s.href}
+                        target="_blank"
+                        rel="noreferrer"
                         className="grid h-9 w-9 place-items-center rounded-xl border border-[#264f7b] bg-[#0d2748] text-[10px] font-bold text-slate-300 hover:text-white"
                       >
-                        {s.label.slice(0, 2).toUpperCase()}
+                        {s.key.toUpperCase().slice(0, 2)}
                       </a>
                     ))}
                   </div>

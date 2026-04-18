@@ -382,7 +382,7 @@ export const socialLinks = [
   { label: "Instagram", href: "#", key: "ig" },
   { label: "YouTube", href: "#", key: "yt" },
   { label: "TikTok", href: "#", key: "tt" },
-  { label: "Calendly", href: "#", key: "cal" },
+  { label: "Calendly", href: "https://calendly.com/ibrahim-b-digitalrenforcy/30-minutes-de-discussion", key: "cal" },
 ];
 
 export const servicesOverviewStats = [
