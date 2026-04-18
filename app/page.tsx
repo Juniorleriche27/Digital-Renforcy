@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import StatsPanel from "@/components/StatsPanel";
 import CountersBar from "@/components/CountersBar";
+import TechMarquee from "@/components/TechMarquee";
 import ProblemsSection from "@/components/ProblemsSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import EcosystemSection from "@/components/EcosystemSection";
@@ -33,6 +34,7 @@ export default function HomePage() {
         <div data-reveal data-delay="120ms">
           <CountersBar />
         </div>
+        <TechMarquee />
         <div data-reveal data-delay="40ms">
           <ProblemsSection />
         </div>

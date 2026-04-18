@@ -30,8 +30,8 @@ export default function SiteEffects() {
         });
       },
       {
-        threshold: 0.16,
-        rootMargin: "0px 0px -10% 0px",
+        threshold: 0.06,
+        rootMargin: "0px 0px -4% 0px",
       },
     );
 

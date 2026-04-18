@@ -1,32 +1,85 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { counters } from "@/lib/data";
 
-export default function CountersBar() {
+function useCountUp(target: number, duration: number, active: boolean) {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    if (!active) return;
+    let startTime: number | null = null;
+    const tick = (ts: number) => {
+      if (!startTime) startTime = ts;
+      const progress = Math.min((ts - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.round(eased * target));
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, [target, duration, active]);
+  return count;
+}
+
+function CounterItem({
+  counter,
+  index,
+  active,
+}: {
+  counter: (typeof counters)[0];
+  index: number;
+  active: boolean;
+}) {
+  const target = parseInt(counter.value, 10);
+  const count = useCountUp(isNaN(target) ? 0 : target, 1600 + index * 200, active);
+
   return (
-    <section className="border-b border-[#1f4069] pb-8 pt-6">
+    <article className="flex items-center gap-4">
+      <div className="grid h-14 w-14 place-items-center rounded-2xl border border-[#214a78] bg-[#0f2a4f] text-2xl">
+        {counter.icon === "layers"
+          ? "🧱"
+          : counter.icon === "briefcase"
+          ? "💼"
+          : counter.icon === "award"
+          ? "🏅"
+          : "📈"}
+      </div>
+      <div>
+        <div className="text-3xl font-bold text-slate-100 md:text-4xl">
+          {isNaN(target) ? counter.value : count}
+          <span className="text-[#49a8ff]">{counter.suffix}</span>
+        </div>
+        <p className="text-sm text-slate-300 md:text-xl">{counter.label}</p>
+      </div>
+    </article>
+  );
+}
+
+export default function CountersBar() {
+  const [active, setActive] = useState(false);
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setActive(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section ref={ref} className="border-b border-[#1f4069] pb-8 pt-6">
       <div className="container-shell">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {counters.map((counter, index) => (
-            <article key={counter.label} className="flex items-center gap-4">
-              <div className="grid h-14 w-14 place-items-center rounded-2xl border border-[#214a78] bg-[#0f2a4f] text-2xl">
-                {counter.icon === "layers"
-                  ? "🧱"
-                  : counter.icon === "briefcase"
-                  ? "💼"
-                  : counter.icon === "award"
-                  ? "🏅"
-                  : "📈"}
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-slate-100 md:text-4xl">
-                  {counter.value}
-                  <span className="text-[#49a8ff]">{counter.suffix}</span>
-                </div>
-                <p className="text-sm text-slate-300 md:text-xl">{counter.label}</p>
-              </div>
-              {index < counters.length - 1 ? (
-                <span className="hidden h-12 w-px bg-[#244a74] md:block" />
-              ) : null}
-            </article>
+            <CounterItem key={counter.label} counter={counter} index={index} active={active} />
           ))}
         </div>
       </div>

@@ -504,6 +504,24 @@ button {
   }
 }
 
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-marquee-track {
+  animation: marquee-scroll 32s linear infinite;
+  will-change: transform;
+}
+
+.tech-marquee-track:hover {
+  animation-play-state: paused;
+}
+
 @keyframes gradient-flow {
   0% {
     background-position: 0% 50%;
