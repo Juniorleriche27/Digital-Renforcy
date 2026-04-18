@@ -1,0 +1,1364 @@
+
+> digital-renforcy@0.1.0 dev
+> next dev -p 3900
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3900
+
+ ✓ Starting...
+ ✓ Ready in 4.3s
+ ○ Compiling /portfolio ...
+ ✓ Compiled /portfolio in 10.9s (584 modules)
+ GET / 200 in 115ms
+ GET /services 200 in 58ms
+ GET /portfolio 200 in 48ms
+ ✓ Compiled /about in 446ms (572 modules)
+ GET /about 200 in 585ms
+ ✓ Compiled /pricing in 242ms (574 modules)
+ GET /pricing 200 in 332ms
+ ✓ Compiled /blog in 259ms (576 modules)
+ GET /blog 200 in 351ms
+ ✓ Compiled /a-propos in 237ms (578 modules)
+ GET /a-propos 200 in 359ms
+ ✓ Compiled /tarifs in 324ms (580 modules)
+ GET /tarifs 200 in 446ms
+ GET /portfolio 200 in 101ms
+ GET /about 200 in 83ms
+ GET /pricing 200 in 85ms
+ GET /blog 200 in 46ms
+ GET / 200 in 75ms
+ GET /services 200 in 42ms
+ GET /portfolio 200 in 37ms
+ ✓ Compiled in 1311ms (583 modules)
+   Reload env: .env.local
+ ✓ Compiled in 2.2s (583 modules)
+ ✓ Compiled in 390ms (583 modules)
+ ✓ Compiled in 248ms (583 modules)
+ ✓ Compiled in 314ms (583 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\5.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\5.pack.gz'
+ ✓ Compiled in 4.4s (583 modules)
+ ✓ Compiled in 538ms (583 modules)
+ ✓ Compiled /_not-found in 291ms (572 modules)
+ GET / 200 in 193ms
+ ✓ Compiled in 825ms (586 modules)
+ ✓ Compiled in 293ms (586 modules)
+ ✓ Compiled in 277ms (586 modules)
+ ✓ Compiled in 237ms (586 modules)
+ ✓ Compiled in 245ms (586 modules)
+ ✓ Compiled in 133ms (284 modules)
+ ✓ Compiled in 264ms (586 modules)
+ ✓ Compiled in 412ms (586 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1323ms (796 modules)
+ GET /_next/static/css/app/layout.css?v=1776517400034 404 in 1499ms
+ GET /_next/static/css/app/layout.css?v=1776517401666 404 in 9ms
+ ✓ Compiled in 738ms (810 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/layout.css?v=1776517409282 500 in 2396ms
+ ✓ Compiled in 669ms (810 modules)
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/layout.css?v=1776517413479 500 in 38ms
+ ✓ Compiled in 467ms (810 modules)
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/layout.css?v=1776517417029 500 in 13ms
+ ✓ Compiled in 275ms (810 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/layout.css?v=1776517423899 500 in 10ms
+ ✓ Compiled in 253ms (810 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/layout.css?v=1776517427844 500 in 8ms
+ ✓ Compiled in 316ms (810 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/layout.css?v=1776517432217 500 in 11ms
+ ✓ Compiled in 504ms (810 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/layout.css?v=1776517442881 500 in 10ms
+ ✓ Compiled in 429ms (810 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/css/app/layout.css?v=1776517446631 500 in 13ms
+ ✓ Compiled in 382ms (810 modules)
+ ✓ Compiled in 279ms (810 modules)
+ ✓ Compiled in 360ms (810 modules)
+ ✓ Compiled in 295ms (810 modules)
+ ✓ Compiled in 330ms (810 modules)
+ ✓ Compiled in 275ms (810 modules)
+ ✓ Compiled in 443ms (810 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Digital Renforcy\digital-renforcy\.next\server\vendor-chunks'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in C:\Digital Renforcy\digital-renforcy\.next\server for build dependencies doesn't lead to expected result 'C:\Digital Renforcy\digital-renforcy\.next\server\vendor-chunks\@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in 'C:\Digital Renforcy\digital-renforcy\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected C:\Digital Renforcy\digital-renforcy\.next\server\vendor-chunks\@swc.js)
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\.next\server\app\portfolio\page.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\.next\server\app\portfolio\page.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in C:\Digital Renforcy\digital-renforcy\.next\server for build dependencies doesn't lead to expected result 'C:\Digital Renforcy\digital-renforcy\.next\server\vendor-chunks\next.js', but to 'Error: Can't resolve './vendor-chunks/next' in 'C:\Digital Renforcy\digital-renforcy\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected C:\Digital Renforcy\digital-renforcy\.next\server\vendor-chunks\next.js)
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\.next\server\app\portfolio\page.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\.next\server\app\portfolio\page.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ✓ Compiled in 526ms (464 modules)
+ ✓ Compiled /_not-found in 195ms (794 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ✓ Compiled /_error in 178ms (796 modules)
+ GET /_next/static/css/app/layout.css?v=1776518062292 500 in 421ms
+ ✓ Compiled in 259ms (464 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:40165
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:40222)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ✓ Compiled /_error in 149ms (793 modules)
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\pages\\_document.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:40165
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:40222)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\pages\\_document.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\pages\\_document.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET / 500 in 20ms
+ ✓ Compiled /_not-found in 122ms (796 modules)
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/fallback/webpack.js 500 in 152ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 151ms
+ GET /_next/static/chunks/fallback/main.js 500 in 150ms
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4670
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js:1:4715)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderErrorToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2097:30)
+    at async pipe.req.req (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:2063:30)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:368:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 8ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 8ms
+ ✓ Compiled in 888ms (810 modules)
+ ✓ Compiled in 359ms (796 modules)
+ ✓ Compiled in 309ms (796 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\server-development\0.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\server-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\1.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\1.pack.gz'
+ ✓ Compiled in 214ms (464 modules)
+ ✓ Compiled in 137ms (464 modules)
+ ✓ Compiled in 257ms (464 modules)
+ ✓ Compiled in 190ms (464 modules)
+ ✓ Compiled in 202ms (464 modules)
+ ✓ Compiled in 435ms (805 modules)
+ ✓ Compiled in 205ms (464 modules)
+ ✓ Compiled in 156ms (464 modules)
+ ✓ Compiled in 387ms (464 modules)
+ ✓ Compiled in 277ms (464 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\server-development\0.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\server-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\1.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\1.pack.gz'
+ ✓ Compiled in 167ms (464 modules)
+ ✓ Compiled in 202ms (464 modules)
+ ✓ Compiled in 316ms (791 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\0.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\0.pack.gz'
+ ✓ Compiled in 370ms (805 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\server-development\0.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\server-development\0.pack.gz'
+ ✓ Compiled in 449ms (791 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\server-development\0.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\server-development\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\0.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\0.pack.gz'
+ ✓ Compiled in 478ms (805 modules)
+ ✓ Compiled in 366ms (805 modules)
+ ✓ Compiled in 267ms (805 modules)
+ ✓ Compiled in 276ms (805 modules)
+ ✓ Compiled in 295ms (805 modules)
+ ✓ Compiled in 325ms (805 modules)
+ ✓ Compiled in 291ms (805 modules)
+ ✓ Compiled in 377ms (805 modules)
+ ✓ Compiled in 289ms (805 modules)
+ ✓ Compiled in 250ms (805 modules)
+ ✓ Compiled in 296ms (805 modules)
+ ✓ Compiled in 447ms (805 modules)
+ ✓ Compiled in 477ms (805 modules)
+ ✓ Compiled in 404ms (805 modules)
+ ✓ Compiled in 432ms (805 modules)
+ ✓ Compiled in 228ms (805 modules)
+ ✓ Compiled in 324ms (805 modules)
+ ✓ Compiled in 349ms (805 modules)
+ ✓ Compiled in 466ms (805 modules)
+ ✓ Compiled in 231ms (805 modules)
+ ✓ Compiled in 283ms (805 modules)
+ ✓ Compiled in 270ms (805 modules)
+ ✓ Compiled in 273ms (805 modules)
+ ✓ Compiled in 330ms (805 modules)
+ ✓ Compiled in 351ms (805 modules)
+ ✓ Compiled in 426ms (805 modules)
+ ✓ Compiled in 348ms (805 modules)

@@ -5,21 +5,21 @@ import CookieBanner from "@/components/CookieBanner";
 import FloatingAssistant from "@/components/FloatingAssistant";
 
 const featuredArticle = {
-  category: "Methode",
+  category: "Méthode",
   read: "8 min de lecture",
   date: "10 Mars 2025",
-  title: "La methode hybride Web x Acquisition : comment transformer 1EUR de pub en 3EUR de CA",
-  text: "Notre methode combine un site web intelligent et des campagnes Google/Meta Ads pour generer des conversions mesurables des le premier mois.",
+  title: "La méthode hybride Web × Acquisition : comment transformer 1€ de pub en 3€ de CA",
+  text: "Notre méthode combine un site web intelligent et des campagnes Google/Meta Ads pour générer des conversions mesurables dès le premier mois.",
   href: "/blog/methode-hybride-web-acquisition-renovation-formation",
 };
 
 const articles = [
   {
-    emoji: "Renovation",
-    category: "Renovation",
+    emoji: "Rénovation",
+    category: "Rénovation",
     read: "7 min",
     title: "Artisan : comment trouver des clients sur Internet sans commission",
-    text: "Arretez de payer 15% de commission aux plateformes de mise en relation. Voici comment generer vos propres leads avec Google Ads et Meta Ads.",
+    text: "Arrêtez de payer 15% de commission aux plateformes de mise en relation. Voici comment générer vos propres leads avec Google Ads et Meta Ads.",
     date: "8 Mars 2025",
     href: "/blog/artisan-renovation-trouver-clients-internet",
   },
@@ -28,7 +28,7 @@ const articles = [
     category: "Site Intelligent",
     read: "5 min",
     title: "Pourquoi un artisan sans site web perd des clients chaque jour",
-    text: "73% des Francais cherchent un artisan sur Google avant de l appeler. Sans site web professionnel, vous perdez ces clients potentiels.",
+    text: "73% des Français cherchent un artisan sur Google avant de l'appeler. Sans site web professionnel, vous perdez ces clients potentiels.",
     date: "2 Mars 2025",
     href: "/blog/site-web-artisan-indispensable",
   },
@@ -37,35 +37,35 @@ const articles = [
     category: "Formation",
     read: "9 min",
     title: "Remplir ses sessions de formation avec Google Ads : guide complet",
-    text: "Strategie pas a pas pour organisme de formation : mots-cles, ciblage, annonces et optimisation du cout par inscription.",
-    date: "24 Fev 2025",
+    text: "Stratégie pas à pas pour organisme de formation : mots-clés, ciblage, annonces et optimisation du coût par inscription.",
+    date: "24 Fév 2025",
     href: "/blog/formation-remplir-sessions-google-ads",
   },
   {
     emoji: "Ads",
-    category: "Renovation",
+    category: "Rénovation",
     read: "6 min",
     title: "Google Ads vs Leboncoin / MyTradie : quel est le meilleur canal ?",
-    text: "Comparatif honnete des plateformes a commission vs publicite directe: couts, qualite des leads et independance.",
-    date: "17 Fev 2025",
+    text: "Comparatif honnête des plateformes à commission vs publicité directe : coûts, qualité des leads et indépendance.",
+    date: "17 Fév 2025",
     href: "/blog/google-ads-vs-leboncoin-artisan",
   },
   {
     emoji: "Checklist",
     category: "Site Intelligent",
     read: "6 min",
-    title: "5 elements indispensables sur le site d un organisme de formation",
-    text: "Programme detaille, calendrier sessions, bouton CPF visible, preuves et SEO: les fondamentaux d un site qui convertit.",
-    date: "10 Fev 2025",
+    title: "5 éléments indispensables sur le site d'un organisme de formation",
+    text: "Programme détaillé, calendrier sessions, bouton CPF visible, preuves et SEO : les fondamentaux d'un site qui convertit.",
+    date: "10 Fév 2025",
     href: "/blog/site-web-formation-convertir-stagiaires",
   },
   {
     emoji: "Meta",
-    category: "Renovation",
+    category: "Rénovation",
     read: "8 min",
-    title: "Meta Ads pour la renovation : pourquoi le before/after performe",
-    text: "Comment structurer et cibler les visuels before/after pour maximiser les demandes de devis qualifiees.",
-    date: "3 Fev 2025",
+    title: "Meta Ads pour la rénovation : pourquoi le before/after performe",
+    text: "Comment structurer et cibler les visuels before/after pour maximiser les demandes de devis qualifiées.",
+    date: "3 Fév 2025",
     href: "/blog/meta-ads-renovation-before-after",
   },
 ];
@@ -79,13 +79,13 @@ export default function BlogPage() {
           <div className="container-shell">
             <p className="text-sm font-medium text-slate-400">Accueil / Blog</p>
             <div className="mt-8 max-w-4xl" data-reveal data-delay="40ms">
-              <span className="badge-chip">BLOG & RESSOURCES</span>
+              <span className="badge-chip">BLOG &amp; RESSOURCES</span>
               <h1 className="mt-5 text-5xl font-bold leading-[0.98] tracking-tight text-slate-100 md:text-7xl">
-                Ressources pour <span className="title-gradient">renovation & formation</span>
+                Ressources pour <span className="title-gradient">rénovation &amp; formation</span>
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-slate-300 md:text-3xl">
-                Guides pratiques, etudes de cas et strategies concretes pour maitriser la methode
-                hybride Web x Acquisition et transformer votre marketing en machine a leads.
+                Guides pratiques, études de cas et stratégies concrètes pour maîtriser la méthode
+                hybride Web × Acquisition et transformer votre marketing en machine à leads.
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function BlogPage() {
                 {featuredArticle.text}
               </p>
               <Link href={featuredArticle.href} className="btn-primary mt-7">
-                Lire l article
+                Lire l&apos;article
               </Link>
             </article>
           </div>
@@ -143,7 +143,7 @@ export default function BlogPage() {
                   <div className="mt-5 flex items-center justify-between">
                     <span className="text-xs text-slate-400">{article.date}</span>
                     <Link href={article.href} className="text-sm font-semibold text-[#79acff] hover:text-white">
-                      Lire {"->"}
+                      Lire →
                     </Link>
                   </div>
                 </article>
@@ -157,10 +157,10 @@ export default function BlogPage() {
             <div data-reveal data-delay="50ms" className="dark-panel rounded-[34px] px-8 py-12 text-center">
               <span className="badge-chip">NEWSLETTER</span>
               <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                Conseils digitaux <span className="title-gradient">adaptes a votre secteur</span>
+                Conseils digitaux <span className="title-gradient">adaptés à votre secteur</span>
               </h2>
               <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
-                1 email bi-mensuel: les meilleures strategies pour trouver des clients en renovation
+                1 email bi-mensuel : les meilleures stratégies pour trouver des clients en rénovation
                 et remplir vos sessions de formation.
               </p>
               <form className="mx-auto mt-8 grid max-w-2xl gap-3 sm:grid-cols-[1fr_auto]">
@@ -170,10 +170,10 @@ export default function BlogPage() {
                   className="rounded-xl border border-[#315a86] bg-[#1a3456] px-4 py-3 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#4a84ff] md:text-lg"
                 />
                 <button type="button" className="btn-primary">
-                  S abonner
+                  S&apos;abonner
                 </button>
               </form>
-              <p className="mt-4 text-xs text-slate-400 md:text-sm">Zero spam. Desabonnement en 1 clic.</p>
+              <p className="mt-4 text-xs text-slate-400 md:text-sm">Zéro spam. Désabonnement en 1 clic.</p>
             </div>
           </div>
         </section>

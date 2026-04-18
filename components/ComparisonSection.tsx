@@ -12,7 +12,7 @@ export default function ComparisonSection() {
             Pourquoi choisir <span className="title-gradient">Digital Renforcy</span> ?
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
-            Agence web hybride : developpement, automatisation et innovation - vs. les prestataires traditionnels.
+            Agence web hybride : développement, automatisation et innovation — vs. les prestataires traditionnels.
           </p>
         </div>
 

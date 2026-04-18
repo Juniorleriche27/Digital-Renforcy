@@ -18,15 +18,15 @@ export default function TestimonialsSection() {
       <div className="container-shell">
         <div className="mx-auto max-w-5xl text-center">
           <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
-            ⭐ TEMOIGNAGES
+            ⭐ TÉMOIGNAGES
           </span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Ce que disent nos clients
             <br />
-            <span className="title-gradient">renovation & formation</span>
+            <span className="title-gradient">rénovation &amp; formation</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
-            Des resultats concrets, mesurables, par des entreprises comme la votre.
+            Des résultats concrets, mesurables, par des entreprises comme la vôtre.
           </p>
         </div>
 

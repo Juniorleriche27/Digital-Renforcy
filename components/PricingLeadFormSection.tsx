@@ -29,7 +29,7 @@ export default function PricingLeadFormSection() {
 
       if (!response.ok) {
         const payload = (await response.json()) as { error?: string };
-        throw new Error(payload.error ?? "Impossible d envoyer la demande.");
+        throw new Error(payload.error ?? "Impossible d'envoyer la demande.");
       }
 
       setStatus("success");
@@ -47,7 +47,7 @@ export default function PricingLeadFormSection() {
             Choisissez votre <span className="title-gradient">premier pas</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
-            Selectionnez le service qui correspond a votre besoin. On vous rappelle sous 24h.
+            Sélectionnez le service qui correspond à votre besoin. On vous rappelle sous 24h.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function PricingLeadFormSection() {
               <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-emerald-100 text-2xl text-emerald-700">
                 ✓
               </div>
-              <h3 className="mt-4 text-2xl font-semibold text-slate-100 md:text-4xl">Demande envoyee</h3>
+              <h3 className="mt-4 text-2xl font-semibold text-slate-100 md:text-4xl">Demande envoyée</h3>
               <p className="mt-2 text-base text-slate-300 md:text-2xl">
                 Retour sous <strong>24h</strong> pour cadrer votre projet.
               </p>
@@ -95,7 +95,7 @@ export default function PricingLeadFormSection() {
             <form onSubmit={handleSubmit} className="grid gap-4 md:grid-cols-2">
               <div>
                 <label htmlFor="lead-name" className="text-sm font-medium text-slate-200 md:text-lg">
-                  Votre prenom *
+                  Votre prénom *
                 </label>
                 <input
                   id="lead-name"
@@ -110,7 +110,7 @@ export default function PricingLeadFormSection() {
 
               <div>
                 <label htmlFor="lead-phone" className="text-sm font-medium text-slate-200 md:text-lg">
-                  Telephone *
+                  Téléphone *
                 </label>
                 <input
                   id="lead-phone"
@@ -135,7 +135,7 @@ export default function PricingLeadFormSection() {
                   className="mt-2 w-full rounded-xl border border-[#315a86] bg-[#1a3456] px-4 py-3 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-[#4a84ff] md:text-lg"
                 >
                   <option value="">- Choisir -</option>
-                  <option value="renovation">Entreprise renovation / artisan</option>
+                  <option value="renovation">Entreprise rénovation / artisan</option>
                   <option value="formation">Organisme de formation</option>
                   <option value="autre">Autre secteur</option>
                 </select>
@@ -143,7 +143,7 @@ export default function PricingLeadFormSection() {
 
               <div className="md:col-span-2">
                 <button type="submit" disabled={status === "submitting"} className="btn-primary w-full">
-                  {status === "submitting" ? "Envoi en cours..." : "✈ Etre rappele gratuitement"}
+                  {status === "submitting" ? "Envoi en cours..." : "✈ Être rappelé gratuitement"}
                 </button>
                 <p className="mt-3 text-center text-xs text-slate-400 md:text-sm">
                   🔒 Informations 100% confidentielles - Rappel sous 24h

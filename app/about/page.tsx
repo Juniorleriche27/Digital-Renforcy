@@ -7,12 +7,12 @@ import { contact } from "@/lib/data";
 
 const heroValues = [
   {
-    title: "Resultats mesurables",
-    text: "Pas de jargon, que des chiffres reels",
+    title: "Résultats mesurables",
+    text: "Pas de jargon, que des chiffres réels",
   },
   {
     title: "Partenariat long terme",
-    text: "On grandit avec vous, pas a vos depens",
+    text: "On grandit avec vous, pas à vos dépens",
   },
   {
     title: "Innovation digitale",
@@ -25,8 +25,8 @@ const heroValues = [
 ];
 
 const missionStats = [
-  { value: "+60", label: "Projets realises" },
-  { value: "+5 ans", label: "D expertise" },
+  { value: "+60", label: "Projets réalisés" },
+  { value: "+5 ans", label: "D'expertise" },
   { value: "x3", label: "ROI moyen campagnes" },
   { value: "97%", label: "Clients satisfaits" },
 ];
@@ -35,41 +35,41 @@ const commitments = [
   "Site en ligne en 2-3 semaines",
   "Premiers leads sous 4-6 semaines",
   "Reporting lisible chaque mois",
-  "Sans engagement de duree",
-  "Reponse sous 24h garantie",
+  "Sans engagement de durée",
+  "Réponse sous 24h garantie",
 ];
 
 const sectorCards = [
   {
-    title: "Developpement Web",
+    title: "Développement Web",
     items: [
       "Sites modernes, responsive et SEO-friendly",
-      "Fonctionnalites sur mesure",
-      "Chatbot IA, formulaires automatises",
-      "Integration technique et securite",
+      "Fonctionnalités sur mesure",
+      "Chatbot IA, formulaires automatisés",
+      "Intégration technique et sécurité",
       "Maintenance et optimisation continue",
     ],
     tone: "blue",
   },
   {
-    title: "Systemes Automatises",
+    title: "Systèmes Automatisés",
     items: [
-      "Acquisition client automatisee",
+      "Acquisition client automatisée",
       "Tunnels de conversion et landing pages",
       "Chatbot IA et qualification",
-      "Plateformes numeriques autonomes",
-      "Maintenance et optimisation des systemes",
+      "Plateformes numériques autonomes",
+      "Maintenance et optimisation des systèmes",
     ],
     tone: "orange",
   },
   {
-    title: "Automatisation & Systemes",
+    title: "Automatisation & Systèmes",
     items: [
-      "Tunnels de conversion automatises",
-      "Systemes d acquisition client",
+      "Tunnels de conversion automatisés",
+      "Systèmes d'acquisition client",
       "Chatbots IA et formulaires intelligents",
       "Architecture scalable et autonome",
-      "Integrations CRM et outils metier",
+      "Intégrations CRM et outils métier",
     ],
     tone: "cyan",
   },
@@ -78,28 +78,28 @@ const sectorCards = [
 const smartSiteItems = [
   "Design professionnel et mobile-first",
   "Formulaire de devis ou inscription",
-  "Galerie de realisations / formations",
-  "SEO local integre des la conception",
+  "Galerie de réalisations / formations",
+  "SEO local intégré dès la conception",
   "Chargement ultra-rapide (Google score 95+)",
-  "Hebergement et maintenance inclus",
+  "Hébergement et maintenance inclus",
 ];
 
 const differentiators = [
   {
     title: "Expertise technique",
-    text: "Programmation, developpement informatique et creation de systemes numeriques automatises conformes a notre code APE 6201Z.",
+    text: "Programmation, développement informatique et création de systèmes numériques automatisés conformes à notre code APE 6201Z.",
   },
   {
     title: "Transparence totale",
-    text: "Reporting clair, dashboards lisibles, aucun jargon inutile. Vous savez ou va votre budget et quels resultats il produit.",
+    text: "Reporting clair, dashboards lisibles, aucun jargon inutile. Vous savez où va votre budget et quels résultats il produit.",
   },
   {
-    title: "Resultats mesurables",
+    title: "Résultats mesurables",
     text: "Sites en ligne en 2-3 semaines, premiers leads sous 4-6 semaines. On agit vite, on mesure tout, on ajuste.",
   },
   {
     title: "Partenaire long terme",
-    text: "Pas un prestataire qui disparait: un partenaire qui maintient, optimise et fait evoluer vos systemes.",
+    text: "Pas un prestataire qui disparaît : un partenaire qui maintient, optimise et fait évoluer vos systèmes.",
   },
 ];
 
@@ -117,17 +117,17 @@ export default function AboutPage() {
       <main id="top">
         <section className="dark-section pb-12 pt-14 md:pb-16 md:pt-20">
           <div className="container-shell">
-            <p className="text-sm font-medium text-slate-400">Accueil / A Propos</p>
+            <p className="text-sm font-medium text-slate-400">Accueil / À Propos</p>
             <div className="mt-8 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
               <div data-reveal data-delay="40ms">
                 <span className="badge-chip">NOTRE HISTOIRE</span>
                 <h1 className="mt-5 text-5xl font-bold leading-[0.98] tracking-tight text-slate-100 md:text-7xl">
-                  Digital Renforcy - <span className="title-gradient">Agence Web Hybride</span>
+                  Digital Renforcy — <span className="title-gradient">Agence Web Hybride</span>
                 </h1>
                 <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-3xl">
-                  Digital Renforcy combine <strong>expertise technique et innovation numerique</strong>{" "}
-                  pour offrir des solutions performantes et automatisees. Developpement web intelligent,
-                  systemes d acquisition automatises, plateformes autonomes.
+                  Digital Renforcy combine <strong>expertise technique et innovation numérique</strong>{" "}
+                  pour offrir des solutions performantes et automatisées. Développement web intelligent,
+                  systèmes d'acquisition automatisés, plateformes autonomes.
                 </p>
               </div>
 
@@ -155,17 +155,17 @@ export default function AboutPage() {
                 NOTRE MISSION
               </span>
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                La methode qui transforme votre digital en{" "}
-                <span className="title-gradient">force operationnelle</span>
+                La méthode qui transforme votre digital en{" "}
+                <span className="title-gradient">force opérationnelle</span>
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-2xl">
-                Digital Renforcy est nee d un constat: trop d entreprises depensent sur des plateformes
-                a commissions, des sites depasses et des campagnes mal pilotees.
+                Digital Renforcy est née d'un constat : trop d'entreprises dépensent sur des plateformes
+                à commissions, des sites dépassés et des campagnes mal pilotées.
               </p>
               <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-2xl">
-                Notre reponse: la methode hybride Web x Acquisition. Un site web intelligent (200EUR/mois)
-                couple a des campagnes ciblees (des 1200EUR/mois) pour generer des demandes qualifiees.
-                Resultats mesurables des le premier mois, sans engagement.
+                Notre réponse : la méthode hybride Web × Acquisition. Un site web intelligent (200€/mois)
+                couplé à des campagnes ciblées (dès 1 200€/mois) pour générer des demandes qualifiées.
+                Résultats mesurables dès le premier mois, sans engagement.
               </p>
 
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
@@ -238,15 +238,15 @@ export default function AboutPage() {
             <div data-reveal data-delay="40ms">
               <span className="badge-chip">SITE INTELLIGENT</span>
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                Qu est-ce qu un <span className="title-gradient">site web intelligent</span> ?
+                Qu'est-ce qu'un <span className="title-gradient">site web intelligent</span> ?
               </h2>
               <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-2xl">
-                C est bien plus qu un site vitrine. C est un systeme concu pour convertir les
+                C'est bien plus qu'un site vitrine. C'est un système conçu pour convertir les
                 visiteurs en prospects automatiquement, 24h/24 et 7j/7.
               </p>
               <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-2xl">
-                Pour la renovation: formulaire devis optimise, CTA visibles, galerie realisations,
-                SEO local. Pour la formation: pages programme, tunnel inscription fluide, integration
+                Pour la rénovation : formulaire devis optimisé, CTA visibles, galerie réalisations,
+                SEO local. Pour la formation : pages programme, tunnel inscription fluide, intégration
                 CPF et contenu SEO.
               </p>
             </div>
@@ -272,7 +272,7 @@ export default function AboutPage() {
                 NOS VALEURS
               </span>
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                Ce qui nous <span className="title-gradient">differencie</span>
+                Ce qui nous <span className="title-gradient">différencie</span>
               </h2>
             </div>
 
@@ -323,11 +323,11 @@ export default function AboutPage() {
             <div data-reveal data-delay="50ms" className="dark-panel rounded-[34px] px-8 py-12 text-center">
               <span className="badge-chip">TRAVAILLONS ENSEMBLE</span>
               <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                Pret a <span className="title-gradient">digitaliser et automatiser votre acquisition</span> ?
+                Prêt à <span className="title-gradient">digitaliser et automatiser votre acquisition</span> ?
               </h2>
               <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
                 Consultation gratuite de 30 minutes. Audit de votre situation, recommandations
-                personnalisees, sans engagement.
+                personnalisées, sans engagement.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -335,7 +335,7 @@ export default function AboutPage() {
                   Consultation Gratuite
                 </Link>
                 <Link href="/portfolio" className="btn-outline">
-                  Voir nos realisations
+                  Voir nos réalisations
                 </Link>
               </div>
             </div>

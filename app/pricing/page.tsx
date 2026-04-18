@@ -24,30 +24,30 @@ type PlanCard = {
 };
 
 const trustStats = [
-  { value: "+60", label: "clients accompagnes" },
+  { value: "+60", label: "clients accompagnés" },
   { value: "2-3 sem", label: "mise en ligne moyenne" },
   { value: "95+", label: "score Google Lighthouse" },
-  { value: "0EUR", label: "frais caches" },
+  { value: "0€", label: "frais cachés" },
 ];
 
 const webPlans: PlanCard[] = [
   {
     name: "Site Essentiel",
-    subtitle: "Ideal pour demarrer",
+    subtitle: "Idéal pour démarrer",
     description:
-      "Site vitrine professionnel pour lancer votre presence en ligne. Moderne, rapide et visible sur Google des le lancement.",
-    price: "200EUR/mois",
+      "Site vitrine professionnel pour lancer votre présence en ligne. Moderne, rapide et visible sur Google dès le lancement.",
+    price: "200€/mois",
     features: [
-      { label: "Site vitrine jusqu a 5 pages", included: true },
+      { label: "Site vitrine jusqu'à 5 pages", included: true },
       { label: "Design professionnel sur mesure", included: true },
       { label: "Optimisation mobile (responsive)", included: true },
-      { label: "Hebergement inclus", included: true },
+      { label: "Hébergement inclus", included: true },
       { label: "Maintenance mensuelle", included: true },
       { label: "Formulaire de contact et devis", included: true },
       { label: "SEO technique de base", included: true },
-      { label: "SSL et securite inclus", included: true },
-      { label: "Pages supplementaires", included: false },
-      { label: "Blog / actualites", included: false },
+      { label: "SSL et sécurité inclus", included: true },
+      { label: "Pages supplémentaires", included: false },
+      { label: "Blog / actualités", included: false },
       { label: "Chatbot IA", included: false },
     ],
     cta: "Choisir Essentiel",
@@ -56,22 +56,22 @@ const webPlans: PlanCard[] = [
   },
   {
     name: "Site Pro",
-    subtitle: "Pour maximiser vos resultats",
+    subtitle: "Pour maximiser vos résultats",
     description:
-      "Site complet avec blog, pages illimitees et chatbot IA. Developpez votre autorite et automatisez la capture de prospects 24h/7j.",
-    price: "300EUR/mois",
-    extra: "ou 897EUR en une fois",
+      "Site complet avec blog, pages illimitées et chatbot IA. Développez votre autorité et automatisez la capture de prospects 24h/7j.",
+    price: "300€/mois",
+    extra: "ou 897€ en une fois",
     features: [
-      { label: "Pages illimitees", included: true },
+      { label: "Pages illimitées", included: true },
       { label: "Design professionnel sur mesure", included: true },
       { label: "Optimisation mobile (responsive)", included: true },
-      { label: "Hebergement haute performance", included: true },
-      { label: "Maintenance et mises a jour incluses", included: true },
+      { label: "Hébergement haute performance", included: true },
+      { label: "Maintenance et mises à jour incluses", included: true },
       { label: "Formulaire de contact et devis auto", included: true },
-      { label: "SEO technique avance", included: true },
-      { label: "Blog / actualites", included: true },
-      { label: "Galerie realisations", included: true },
-      { label: "Chatbot IA personnalise 24h/7j", included: true },
+      { label: "SEO technique avancé", included: true },
+      { label: "Blog / actualités", included: true },
+      { label: "Galerie réalisations", included: true },
+      { label: "Chatbot IA personnalisé 24h/7j", included: true },
       { label: "Rapport mensuel de performance", included: true },
     ],
     cta: "Choisir Pro",
@@ -82,14 +82,14 @@ const webPlans: PlanCard[] = [
 ];
 
 const webComparison = [
-  { label: "Nombre de pages", essential: "Jusqu a 5", pro: "Illimitees" },
+  { label: "Nombre de pages", essential: "Jusqu'à 5", pro: "Illimitées" },
   { label: "Design sur mesure", essential: "Oui", pro: "Oui" },
-  { label: "Hebergement", essential: "Inclus", pro: "Haute performance" },
-  { label: "SEO", essential: "Basique", pro: "Avance" },
-  { label: "Blog / actualites", essential: "Non", pro: "Oui" },
+  { label: "Hébergement", essential: "Inclus", pro: "Haute performance" },
+  { label: "SEO", essential: "Basique", pro: "Avancé" },
+  { label: "Blog / actualités", essential: "Non", pro: "Oui" },
   { label: "Chatbot IA", essential: "Non", pro: "24h/7j" },
   { label: "Rapport de performance", essential: "Non", pro: "Mensuel" },
-  { label: "Paiement unique possible", essential: "Non", pro: "897EUR" },
+  { label: "Paiement unique possible", essential: "Non", pro: "897€" },
 ];
 
 const acquisitionPlans: PlanCard[] = [
@@ -97,43 +97,43 @@ const acquisitionPlans: PlanCard[] = [
     name: "Acquisition Essentielle",
     subtitle: "Premier flux de prospects",
     description:
-      "Systeme d acquisition automatise cle en main: landing page, formulaire intelligent, chatbot IA et transmission en temps reel.",
-    price: "1200EUR/mois",
+      "Système d'acquisition automatisé clé en main : landing page, formulaire intelligent, chatbot IA et transmission en temps réel.",
+    price: "1 200€/mois",
     extra: "Premiers prospects sous 4-6 semaines",
     features: [
-      { label: "Audit et strategie d acquisition", included: true },
-      { label: "1 landing page dediee", included: true },
+      { label: "Audit et stratégie d'acquisition", included: true },
+      { label: "1 landing page dédiée", included: true },
       { label: "Formulaire intelligent de qualification", included: true },
       { label: "Chatbot IA de capture", included: true },
       { label: "Transmission automatique des prospects", included: true },
       { label: "Rapport mensuel ROI", included: true },
       { label: "A/B testing", included: false },
-      { label: "Integration CRM avancee", included: false },
-      { label: "Tunnels multi-etapes", included: false },
+      { label: "Intégration CRM avancée", included: false },
+      { label: "Tunnels multi-étapes", included: false },
     ],
-    cta: "Demarrer l acquisition",
+    cta: "Démarrer l'acquisition",
     href: `${contact.contactForm}?plan=acq-starter`,
     accent: "orange",
   },
   {
     name: "Acquisition Pro",
-    subtitle: "Volume et qualification avancee",
+    subtitle: "Volume et qualification avancée",
     description:
-      "Systeme complet avec tunnels multi-etapes, A/B testing continu et integration CRM pour maximiser vos prospects qualifies.",
-    price: "1800EUR/mois",
+      "Système complet avec tunnels multi-étapes, A/B testing continu et intégration CRM pour maximiser vos prospects qualifiés.",
+    price: "1 800€/mois",
     extra: "Premiers prospects sous 4-6 semaines",
     features: [
-      { label: "Audit et strategie complete", included: true },
-      { label: "Jusqu a 3 landing pages dediees", included: true },
-      { label: "Tunnels de conversion optimises", included: true },
-      { label: "Chatbot IA avance (qualification + relance)", included: true },
+      { label: "Audit et stratégie complète", included: true },
+      { label: "Jusqu'à 3 landing pages dédiées", included: true },
+      { label: "Tunnels de conversion optimisés", included: true },
+      { label: "Chatbot IA avancé (qualification + relance)", included: true },
       { label: "A/B testing continu", included: true },
-      { label: "Integration CRM ou email", included: true },
+      { label: "Intégration CRM ou email", included: true },
       { label: "Automatisation des relances", included: true },
       { label: "Rapport hebdomadaire + tableau de bord", included: true },
-      { label: "Support prioritaire dedie", included: true },
+      { label: "Support prioritaire dédié", included: true },
     ],
-    cta: "Demarrer Acquisition Pro",
+    cta: "Démarrer Acquisition Pro",
     href: `${contact.contactForm}?plan=acq-growth`,
     highlighted: true,
     accent: "green",
@@ -141,34 +141,34 @@ const acquisitionPlans: PlanCard[] = [
 ];
 
 const guarantees = [
-  { title: "Sans engagement", text: "Resiliez a tout moment, sans penalite." },
-  { title: "Support reactif", text: "Reponse sous 24h par email ou telephone." },
+  { title: "Sans engagement", text: "Résiliez à tout moment, sans pénalité." },
+  { title: "Support réactif", text: "Réponse sous 24h par email ou téléphone." },
   { title: "Modifications incluses", text: "Textes, photos, ajustements compris." },
-  { title: "SSL & securite", text: "Certificat SSL et sauvegardes automatiques." },
+  { title: "SSL & sécurité", text: "Certificat SSL et sauvegardes automatiques." },
   { title: "Performance garantie", text: "Score Google Lighthouse 95+." },
-  { title: "Mise en ligne rapide", text: "En ligne en 2 a 3 semaines." },
+  { title: "Mise en ligne rapide", text: "En ligne en 2 à 3 semaines." },
 ];
 
 const pricingFaq = [
   {
-    q: "Y a-t-il des frais de setup ou d engagement ?",
-    a: "Non, aucun frais cache ni engagement de duree. Les tarifs affiches incluent creation, hebergement, maintenance et modifications.",
+    q: "Y a-t-il des frais de setup ou d'engagement ?",
+    a: "Non, aucun frais caché ni engagement de durée. Les tarifs affichés incluent création, hébergement, maintenance et modifications.",
   },
   {
     q: "En combien de temps mon site sera-t-il en ligne ?",
-    a: "Entre 2 et 3 semaines apres validation et reception des contenus. Avec blog, comptez 3 a 4 semaines.",
+    a: "Entre 2 et 3 semaines après validation et réception des contenus. Avec blog, comptez 3 à 4 semaines.",
   },
   {
     q: "Que signifie paiement unique pour le Site Pro ?",
-    a: "L option 897EUR couvre la creation complete du site. Hebergement et maintenance restent ensuite optionnels a 50EUR/mois.",
+    a: "L'option 897€ couvre la création complète du site. Hébergement et maintenance restent ensuite optionnels à 50€/mois.",
   },
   {
     q: "Puis-je combiner site web et acquisition client ?",
-    a: "Oui, et c est recommande. Cette combinaison est la plus efficace pour maximiser les resultats.",
+    a: "Oui, et c'est recommandé. Cette combinaison est la plus efficace pour maximiser les résultats.",
   },
   {
-    q: "Comment fonctionne le systeme d acquisition ?",
-    a: "Nous deployons landing pages, formulaires intelligents et chatbots IA qui capturent, qualifient et transmettent vos prospects en temps reel.",
+    q: "Comment fonctionne le système d'acquisition ?",
+    a: "Nous déployons landing pages, formulaires intelligents et chatbots IA qui capturent, qualifient et transmettent vos prospects en temps réel.",
   },
   {
     q: "Puis-je changer de formule en cours de route ?",
@@ -187,11 +187,11 @@ export default function PricingPage() {
             <div className="mt-8 max-w-4xl" data-reveal data-delay="40ms">
               <span className="badge-chip">TARIFICATION TRANSPARENTE</span>
               <h1 className="mt-5 text-5xl font-bold leading-[0.98] tracking-tight text-slate-100 md:text-7xl">
-                Des tarifs <span className="title-gradient">clairs et orientes resultats</span>
+                Des tarifs <span className="title-gradient">clairs et orientés résultats</span>
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-slate-300 md:text-3xl">
-                Pas de surprises, pas de frais caches. Creation, hebergement, maintenance et
-                modifications: tout inclus. <strong>Sans engagement.</strong>
+                Pas de surprises, pas de frais cachés. Création, hébergement, maintenance et
+                modifications : tout inclus. <strong>Sans engagement.</strong>
               </p>
             </div>
 
@@ -214,12 +214,12 @@ export default function PricingPage() {
         <section className="dark-section pt-6">
           <div className="container-shell">
             <div className="mx-auto max-w-4xl text-center" data-reveal data-delay="40ms">
-              <span className="badge-chip">DEVELOPPEMENT WEB</span>
+              <span className="badge-chip">DÉVELOPPEMENT WEB</span>
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Votre site web <span className="title-gradient">par abonnement</span>
               </h2>
               <p className="mt-4 text-base text-slate-300 md:text-2xl">
-                Creation, hebergement, maintenance et modifications dans un abonnement mensuel lisible.
+                Création, hébergement, maintenance et modifications dans un abonnement mensuel lisible.
               </p>
             </div>
 
@@ -241,14 +241,14 @@ export default function PricingPage() {
             <div className="mx-auto max-w-5xl text-center" data-reveal data-delay="40ms">
               <span className="badge-chip">COMPARATIF</span>
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                Essentiel vs Pro <span className="title-gradient">en un coup d oeil</span>
+                Essentiel vs Pro — <span className="title-gradient">en un coup d'œil</span>
               </h2>
             </div>
 
             <div className="mx-auto mt-8 max-w-5xl overflow-hidden rounded-2xl border border-[#2b537f]">
               <div className="grid grid-cols-3 bg-[#122f53]">
                 <div className="px-4 py-4 text-xs font-bold uppercase tracking-wider text-slate-400 md:text-sm">
-                  Fonctionnalite
+                  Fonctionnalité
                 </div>
                 <div className="border-l border-[#2b537f] px-4 py-4 text-center text-sm font-bold text-[#79acff] md:text-lg">
                   Essentiel
@@ -281,10 +281,10 @@ export default function PricingPage() {
           <div className="container-shell">
             <div className="mx-auto max-w-4xl text-center" data-reveal data-delay="40ms">
               <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-300">
-                SYSTEME D ACQUISITION CLIENTS
+                SYSTÈME D'ACQUISITION CLIENTS
               </span>
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                Des prospects qualifies <span className="title-gradient">en automatique</span>
+                Des prospects qualifiés <span className="title-gradient">en automatique</span>
               </h2>
               <p className="mt-4 text-base text-slate-300 md:text-2xl">
                 Tunnels de conversion, chatbots IA, formulaires intelligents et pilotage ROI.
@@ -330,30 +330,30 @@ export default function PricingPage() {
           <div className="container-shell">
             <div data-reveal data-delay="40ms" className="dark-panel rounded-[34px] px-8 py-12 text-center">
               <span className="badge-chip border-emerald-500/30 bg-emerald-500/10 text-emerald-300">
-                OFFRE COMBINEE - RECOMMANDEE
+                OFFRE COMBINÉE — RECOMMANDÉE
               </span>
               <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                Site web + Acquisition - <span className="title-gradient">la strategie complete</span>
+                Site web + Acquisition — <span className="title-gradient">la stratégie complète</span>
               </h2>
               <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
-                Un site qui convertit + un systeme automatise d acquisition = la combinaison ideale pour
-                multiplier vos prospects qualifies.
+                Un site qui convertit + un système automatisé d'acquisition = la combinaison idéale pour
+                multiplier vos prospects qualifiés.
               </p>
 
               <div className="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-4">
                 <div className="rounded-2xl border border-[#295ba2] bg-[#12345f] px-4 py-4">
                   <p className="text-xs font-semibold uppercase tracking-wider text-[#77abff]">Site Web</p>
-                  <p className="mt-1 text-3xl font-bold text-[#77abff]">200EUR</p>
+                  <p className="mt-1 text-3xl font-bold text-[#77abff]">200€</p>
                   <p className="text-xs text-slate-400">/mois</p>
                 </div>
                 <div className="grid place-items-center text-4xl font-black text-slate-500">+</div>
                 <div className="rounded-2xl border border-orange-500/40 bg-orange-500/10 px-4 py-4">
                   <p className="text-xs font-semibold uppercase tracking-wider text-orange-300">Acquisition</p>
-                  <p className="mt-1 text-3xl font-bold text-orange-300">1200EUR</p>
+                  <p className="mt-1 text-3xl font-bold text-orange-300">1 200€</p>
                   <p className="text-xs text-slate-400">/mois</p>
                 </div>
                 <div className="rounded-2xl border border-emerald-500/40 bg-emerald-500/10 px-4 py-4">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-emerald-300">Resultat</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-emerald-300">Résultat</p>
                   <p className="mt-1 text-3xl font-bold text-emerald-300">x3</p>
                   <p className="text-xs text-slate-400">prospects/mois</p>
                 </div>
@@ -361,16 +361,16 @@ export default function PricingPage() {
 
               <article className="mx-auto mt-8 max-w-3xl rounded-2xl border border-[#2a537f] bg-[#102d4f] p-6 text-left">
                 <p className="text-base leading-relaxed text-slate-300 md:text-xl">
-                  "Avant Digital Renforcy, je payais 15% de commission a Habitatpresto. Maintenant j ai
-                  mon propre site avec formulaire de devis automatique et un systeme de relance.{" "}
+                  "Avant Digital Renforcy, je payais 15% de commission à Habitatpresto. Maintenant j'ai
+                  mon propre site avec formulaire de devis automatique et un système de relance.{" "}
                   <strong>3x plus de prospects, 0% de commission.</strong>"
                 </p>
-                <p className="mt-3 text-sm font-semibold text-slate-100 md:text-lg">Karim B. - KBM Renovation</p>
+                <p className="mt-3 text-sm font-semibold text-slate-100 md:text-lg">Karim B. — KBM Rénovation</p>
               </article>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                 <Link href={`${contact.contactForm}?plan=combo`} className="btn-primary">
-                  Devis combine gratuit
+                  Devis combiné gratuit
                 </Link>
                 <Link href={contact.contactForm} className="btn-outline">
                   Consultation 30 min
@@ -384,7 +384,7 @@ export default function PricingPage() {
           <div className="container-shell">
             <div className="mx-auto max-w-4xl text-center" data-reveal data-delay="40ms">
               <span className="badge-chip border-cyan-500/30 bg-cyan-500/10 text-cyan-300">
-                QUESTIONS FREQUENTES
+                QUESTIONS FRÉQUENTES
               </span>
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Tout ce que vous devez <span className="title-gradient">savoir</span>
@@ -412,20 +412,20 @@ export default function PricingPage() {
         <section className="dark-section pt-8">
           <div className="container-shell">
             <div data-reveal data-delay="50ms" className="dark-panel rounded-[34px] px-8 py-12 text-center">
-              <span className="badge-chip">COMMENCONS ENSEMBLE</span>
+              <span className="badge-chip">COMMENÇONS ENSEMBLE</span>
               <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
-                Pret a <span className="title-gradient">booster votre presence digitale</span> ?
+                Prêt à <span className="title-gradient">booster votre présence digitale</span> ?
               </h2>
               <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
                 Audit gratuit de 30 minutes. Aucun engagement. Nous analysons votre situation et vous
-                proposons la formule la plus adaptee.
+                proposons la formule la plus adaptée.
               </p>
 
               <div className="mt-6 flex flex-wrap items-center justify-center gap-5 text-sm text-slate-300 md:text-lg">
-                <span>Reponse sous 24h</span>
+                <span>Réponse sous 24h</span>
                 <span>Sans engagement</span>
                 <span>Devis gratuit</span>
-                <span>Aucun frais cache</span>
+                <span>Aucun frais caché</span>
               </div>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -496,7 +496,7 @@ function PlanCardView({ plan, delay }: { plan: PlanCard; delay: string }) {
           {plan.cta}
         </Link>
         <p className="mt-2 text-center text-xs text-slate-500 md:text-sm">
-          Sans engagement - Resiliable a tout moment
+          Sans engagement — Résiliable à tout moment
         </p>
       </div>
     </article>

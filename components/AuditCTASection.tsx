@@ -7,10 +7,10 @@ export default function AuditCTASection() {
         <div className="dark-panel rounded-[34px] border border-[#2b5685] px-4 py-8 text-center sm:px-8 sm:py-12">
           <span className="badge-chip">🚀 AUDIT GRATUIT</span>
           <h2 className="mx-auto mt-5 max-w-5xl text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
-            Pret a generer plus de clients - sans payer de commissions ?
+            Prêt à générer plus de clients — sans payer de commissions ?
           </h2>
           <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
-            Audit gratuit de 30 minutes. Analyse de votre situation, recommandations personnalisees pour votre secteur (renovation ou formation) - sans engagement.
+            Audit gratuit de 30 minutes. Analyse de votre situation, recommandations personnalisées pour votre secteur (rénovation ou formation) — sans engagement.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -24,7 +24,7 @@ export default function AuditCTASection() {
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-slate-300 md:text-xl">
             <span>🔒 Sans engagement</span>
-            <span>🟢 Reponse en 24h</span>
+            <span>🟢 Réponse en 24h</span>
             <span>🛡️ 100% confidentiel</span>
           </div>
         </div>

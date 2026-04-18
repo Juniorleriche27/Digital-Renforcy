@@ -27,14 +27,14 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg md:text-4xl">
-            Digital Renforcy combine <strong>expertise technique</strong> et innovation numerique :
-            developpement web intelligent, solutions numeriques automatisees et plateformes d
-            entrainement en ligne - une approche hybride et performante.
+            Digital Renforcy combine <strong>expertise technique</strong> et innovation numérique :
+            développement web intelligent, solutions numériques automatisées et plateformes d'entraînement
+            en ligne — une approche hybride et performante.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href={contact.contactForm} className="btn-primary">
-              Demarrer mon projet
+              Démarrer mon projet
             </Link>
             <Link href="/pricing" className="btn-outline">
               Voir les tarifs
@@ -82,7 +82,7 @@ function DashboardCard() {
           <span className="h-2.5 w-2.5 rounded-full bg-orange-400" />
           <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
           <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
-          <span className="ml-2">Dashboard ROI - Temps reel</span>
+          <span className="ml-2">Dashboard ROI — Temps réel</span>
         </div>
         <span className="inline-flex items-center gap-1 text-sm font-semibold text-emerald-400">
           <span className="live-dot h-2 w-2 rounded-full bg-emerald-400" />
@@ -107,7 +107,7 @@ function DashboardCard() {
         <div>
           <div className="mb-3 flex items-center justify-between">
             <p className="text-sm font-semibold tracking-wide text-slate-200">
-              LEADS GENERES - 6 derniers mois
+              LEADS GÉNÉRÉS — 6 derniers mois
             </p>
             <span className="rounded-full bg-[#2f56ff] px-3 py-1 text-xs font-bold text-white">+28%</span>
           </div>
@@ -139,7 +139,7 @@ function DashboardCard() {
         </div>
 
         <div>
-          <p className="mb-3 text-sm font-semibold text-slate-200">SOURCES D ACQUISITION</p>
+          <p className="mb-3 text-sm font-semibold text-slate-200">SOURCES D'ACQUISITION</p>
           <div className="space-y-3">
             {acquisitionSources.map((source, index) => (
               <div key={source.label}>

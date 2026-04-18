@@ -7,13 +7,13 @@ export default function EcosystemSection() {
         <div className="dark-panel rounded-[34px] px-6 py-10 md:px-10">
           <div className="mx-auto max-w-5xl text-center">
             <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
-              🧩 ECOSYSTEME DIGITAL
+              🧩 ÉCOSYSTÈME DIGITAL
             </span>
             <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
-              Toutes les plateformes <span className="title-gradient">connectees pour vous</span>
+              Toutes les plateformes <span className="title-gradient">connectées pour vous</span>
             </h2>
             <p className="mt-4 text-base text-slate-300 md:text-2xl">
-              Nous maitrisons l ensemble des outils qui generent des leads et automatisent votre acquisition - pour que vous n ayez rien a apprendre.
+              Nous maîtrisons l'ensemble des outils qui génèrent des leads et automatisent votre acquisition — pour que vous n'ayez rien à apprendre.
             </p>
           </div>
 

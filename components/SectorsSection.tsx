@@ -8,10 +8,10 @@ export default function SectorsSection() {
         <div className="mx-auto max-w-5xl text-center">
           <span className="badge-chip border-cyan-500/30 bg-cyan-500/10 text-cyan-300">🧭 NOS SECTEURS</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
-            Deux univers, <span className="title-gradient">une meme ambition</span>
+            Deux univers, <span className="title-gradient">une même ambition</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
-            Que vous soyez une entreprise cherchant a digitaliser ou un entrepreneur souhaitant automatiser sa croissance, Digital Renforcy a une solution.
+            Que vous soyez une entreprise cherchant à digitaliser ou un entrepreneur souhaitant automatiser sa croissance, Digital Renforcy a une solution.
           </p>
         </div>
 

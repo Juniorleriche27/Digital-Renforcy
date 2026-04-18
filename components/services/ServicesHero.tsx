@@ -12,9 +12,9 @@ export default function ServicesHero() {
               Nos <span className="title-gradient">deux services</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 md:text-3xl">
-              Digital Renforcy propose la creation de sites web intelligents et la mise en place de
-              systemes d acquisition client automatises. Technique, innovation et performance, tout ce
-              dont votre entreprise a besoin pour maitriser son digital.
+              Digital Renforcy propose la création de sites web intelligents et la mise en place de
+              systèmes d'acquisition client automatisés. Technique, innovation et performance, tout ce
+              dont votre entreprise a besoin pour maîtriser son digital.
             </p>
           </div>
 
@@ -60,8 +60,8 @@ export default function ServicesHero() {
             </div>
 
             <div className="mt-5 rounded-2xl border border-[#245b49] bg-[#103328] px-4 py-4">
-              <p className="text-2xl font-bold text-emerald-400">1EUR {"->"} 3EUR de CA</p>
-              <p className="text-sm text-slate-300">Resultats mesurables des le mois 1</p>
+              <p className="text-2xl font-bold text-emerald-400">1€ → 3€ de CA</p>
+              <p className="text-sm text-slate-300">Résultats mesurables dès le mois 1</p>
             </div>
           </div>
         </div>

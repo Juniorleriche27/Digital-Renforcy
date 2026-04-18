@@ -78,7 +78,7 @@ export default function Header() {
             Appeler
           </a>
           <Link href={contact.contactForm} className="btn-primary px-8 py-3">
-            Demarrer
+            Démarrer
           </Link>
         </div>
 
@@ -127,7 +127,7 @@ export default function Header() {
                 className="rounded-lg bg-[#315cff] px-4 py-2 text-center text-sm font-semibold text-white"
                 onClick={() => setOpen(false)}
               >
-                Demarrer
+                Démarrer
               </Link>
             </div>
           </div>

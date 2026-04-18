@@ -22,16 +22,16 @@ export default function ServicesPage() {
             badge="SERVICE 01"
             icon="🎯"
             title="Acquisition Client"
-            subtitle="Systemes automatises d acquisition clients — Tunnels de conversion et automatisation sur mesure"
-            description="Digital Renforcy concoit et deploie des systemes automatises d acquisition clients sur-mesure. Tunnels de conversion, landing pages haute performance, formulaires intelligents, chatbots IA et automatisation complete du parcours prospect. Chaque contact est capte, qualifie et transmis automatiquement."
+            subtitle="Systèmes automatisés d'acquisition clients — Tunnels de conversion et automatisation sur mesure"
+            description="Digital Renforcy conçoit et déploie des systèmes automatisés d'acquisition clients sur-mesure. Tunnels de conversion, landing pages haute performance, formulaires intelligents, chatbots IA et automatisation complète du parcours prospect. Chaque contact est capté, qualifié et transmis automatiquement."
             bullets={acquisitionFeatureList}
             metrics={[
               { value: "×3", label: "Multiplication du volume de prospects" },
-              { value: "-60%", label: "Reduction du temps de traitement manuel" },
-              { value: "+180%", label: "Volume de leads qualifies" },
-              { value: "4-6 sem", label: "Delai moyen pour les premiers resultats" },
+              { value: "-60%", label: "Réduction du temps de traitement manuel" },
+              { value: "+180%", label: "Volume de leads qualifiés" },
+              { value: "4-6 sem", label: "Délai moyen pour les premiers résultats" },
             ]}
-            videoTitle="Systeme d acquisition client automatise — Digital Renforcy"
+            videoTitle="Système d'acquisition client automatisé — Digital Renforcy"
           />
         </div>
 
@@ -40,17 +40,17 @@ export default function ServicesPage() {
             id="service-web"
             badge="SERVICE 02"
             icon="🌐"
-            title="Developpement Web Intelligent"
-            subtitle="Site web professionnel + maintenance — responsive, SEO-friendly, fonctionnalites sur mesure"
-            description="Digital Renforcy cree et maintient votre site web professionnel. Sites modernes, responsive et SEO-friendly avec fonctionnalites sur mesure : chatbot IA, formulaires automatises, galerie de realisations. Integration technique poussee pour performance et securite maximales. Creation, hebergement, maintenance et mises a jour dans un abonnement mensuel sans surprise."
+            title="Développement Web Intelligent"
+            subtitle="Site web professionnel + maintenance — responsive, SEO-friendly, fonctionnalités sur mesure"
+            description="Digital Renforcy crée et maintient votre site web professionnel. Sites modernes, responsive et SEO-friendly avec fonctionnalités sur mesure : chatbot IA, formulaires automatisés, galerie de réalisations. Intégration technique poussée pour performance et sécurité maximales. Création, hébergement, maintenance et mises à jour dans un abonnement mensuel sans surprise."
             bullets={webFeatureList}
             metrics={[
-              { value: "200EUR", label: "Abonnement mensuel a partir de (tout inclus)" },
-              { value: "2-3 sem", label: "Delai de mise en ligne" },
+              { value: "200€", label: "Abonnement mensuel à partir de (tout inclus)" },
+              { value: "2-3 sem", label: "Délai de mise en ligne" },
               { value: "95+", label: "Score Google Lighthouse" },
-              { value: "100%", label: "Sites optimises mobile-first" },
+              { value: "100%", label: "Sites optimisés mobile-first" },
             ]}
-            videoTitle="Creation de site web intelligent pour entreprise"
+            videoTitle="Création de site web intelligent pour entreprise"
             reverse
           />
         </div>

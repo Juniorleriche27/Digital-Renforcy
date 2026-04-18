@@ -9,7 +9,7 @@ export default function PortfolioStats() {
             EN CHIFFRES
           </span>
           <h2 className="mt-5 text-5xl font-bold leading-[0.98] tracking-tight text-slate-100 md:text-7xl">
-            Des resultats qui <span className="title-gradient">parlent d eux-memes</span>
+            Des résultats qui <span className="title-gradient">parlent d'eux-mêmes</span>
           </h2>
         </div>
 

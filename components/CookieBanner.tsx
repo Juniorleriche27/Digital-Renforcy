@@ -36,7 +36,7 @@ export default function CookieBanner() {
           <div className="flex-1">
             <div className="text-sm font-semibold text-slate-100">Cookies</div>
             <p className="mt-1 text-xs leading-relaxed text-slate-300">
-              Nous utilisons des cookies pour ameliorer l experience et analyser le trafic.{" "}
+              Nous utilisons des cookies pour améliorer l'expérience et analyser le trafic.{" "}
               <Link href="/privacy" className="text-cyan-300 hover:underline">
                 En savoir plus
               </Link>

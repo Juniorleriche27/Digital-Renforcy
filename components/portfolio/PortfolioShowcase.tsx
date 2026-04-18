@@ -13,25 +13,25 @@ export default function PortfolioShowcase() {
     return portfolioProjects.filter((project) =>
       filter === "acquisition"
         ? project.category === "Acquisition Client"
-        : project.category === "Developpement Web",
+        : project.category === "Développement Web",
     );
   }, [filter]);
 
   return (
     <section className="dark-section pt-14 md:pt-20">
       <div className="container-shell">
-        <p className="text-sm font-medium text-slate-400">Accueil / Realisations</p>
+        <p className="text-sm font-medium text-slate-400">Accueil / Réalisations</p>
 
         <div className="mx-auto mt-8 max-w-5xl text-center">
-          <span className="badge-chip">NOS REALISATIONS</span>
+          <span className="badge-chip">NOS RÉALISATIONS</span>
           <h1 className="mt-5 text-5xl font-bold leading-[0.98] tracking-tight text-slate-100 md:text-7xl">
-            Des resultats concrets pour
+            Des résultats concrets pour
             <br />
-            <span className="title-gradient">renovation & formation</span>
+            <span className="title-gradient">rénovation &amp; formation</span>
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-300 md:text-3xl">
-            Cas d etudes reels : leads generes, inscriptions augmentees, sites mis en ligne.
-            Des chiffres mesurables pour des entreprises comme la votre.
+            Cas d'études réels : leads générés, inscriptions augmentées, sites mis en ligne.
+            Des chiffres mesurables pour des entreprises comme la vôtre.
           </p>
         </div>
 

@@ -148,10 +148,10 @@ export default async function ArticlePage({ params }: Props) {
                 {/* CTA bottom */}
                 <div className="mt-12 rounded-2xl border border-[#2b5685] bg-[#102848] px-6 py-7 text-center">
                   <p className="text-lg font-bold text-slate-100">
-                    Pret a mettre en pratique ces conseils ?
+                    Prêt à mettre en pratique ces conseils ?
                   </p>
                   <p className="mt-2 text-sm text-slate-300">
-                    Audit gratuit de 30 min — Nos experts analysent votre situation et definissent la strategie adaptee.
+                    Audit gratuit de 30 min — Nos experts analysent votre situation et définissent la stratégie adaptée.
                   </p>
                   <div className="mt-5 flex flex-wrap justify-center gap-3">
                     <Link href="/contact" className="btn-primary">
@@ -170,10 +170,10 @@ export default async function ArticlePage({ params }: Props) {
                 <div className="dark-card rounded-3xl p-6">
                   <h3 className="text-base font-bold text-slate-100">Audit gratuit — 30 min</h3>
                   <p className="mt-2 text-sm leading-relaxed text-slate-300">
-                    Analyse de votre situation, recommandations personnalisees, sans engagement.
+                    Analyse de votre situation, recommandations personnalisées, sans engagement.
                   </p>
                   <Link href="/contact" className="btn-primary mt-4 w-full text-center">
-                    Reserver mon audit
+                    Réserver mon audit
                   </Link>
                   <a
                     href={contact.phoneHref}
@@ -185,7 +185,7 @@ export default async function ArticlePage({ params }: Props) {
 
                 {/* Trust badges */}
                 <div className="flex flex-wrap gap-2">
-                  {["🔒 Sans engagement", "🟢 Reponse 24h", "🛡️ Confidentiel"].map((t) => (
+                  {["🔒 Sans engagement", "🟢 Réponse 24h", "🛡️ Confidentiel"].map((t) => (
                     <span key={t} className="rounded-full border border-[#264f7b] bg-[#0d2748] px-3 py-1.5 text-xs text-slate-300">
                       {t}
                     </span>

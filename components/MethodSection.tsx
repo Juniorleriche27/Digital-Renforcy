@@ -6,13 +6,13 @@ export default function MethodSection() {
       <div className="container-shell">
         <div className="mx-auto max-w-4xl text-center">
           <span className="badge-chip border-cyan-500/30 bg-cyan-500/10 text-cyan-300">
-            🧬 NOTRE METHODE
+            🧬 NOTRE MÉTHODE
           </span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
-            De l audit a vos <span className="title-gradient">premiers leads</span>
+            De l'audit à vos <span className="title-gradient">premiers leads</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
-            Un processus eprouve, mis en ligne en moins de 15 jours.
+            Un processus éprouvé, mis en ligne en moins de 15 jours.
           </p>
         </div>
 

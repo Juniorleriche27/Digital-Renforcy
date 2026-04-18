@@ -24,7 +24,7 @@ export default function ProcessSection() {
             Votre parcours vers <span className="title-gradient">plus de clients</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
-            De la premiere conversation a vos premiers leads, voici exactement ce qui se passe.
+            De la première conversation à vos premiers leads, voici exactement ce qui se passe.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function ProcessSection() {
 
         <div className="mt-10 text-center">
           <a href={contact.calendly} target="_blank" rel="noreferrer" className="btn-primary">
-            📅 Reserver mon audit gratuit
+            📅 Réserver mon audit gratuit
           </a>
         </div>
       </div>

@@ -9,13 +9,13 @@ export default function ProofSection() {
       <div className="container-shell">
         <div className="mx-auto max-w-4xl text-center">
           <span className="badge-chip border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
-            PREUVES REELLES
+            PREUVES RÉELLES
           </span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Des leads <span className="title-gradient">qui arrivent vraiment</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
-            Voici ce que nos clients recoivent dans leur boite mail - chaque jour, automatiquement.
+            Voici ce que nos clients reçoivent dans leur boîte mail — chaque jour, automatiquement.
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default function ProofSection() {
           <div className="dark-card rounded-3xl border border-emerald-500/40 bg-[#071320] p-4">
             <div className="text-xs font-semibold text-slate-100">
               <span className="live-dot mr-2 inline-block h-2 w-2 rounded-full bg-emerald-400" />
-              Boite mail reelle d un client (Acquisition automatisee)
+              Boîte mail réelle d'un client (Acquisition automatisée)
             </div>
 
             <div className="proof-phone mt-4">
@@ -94,7 +94,7 @@ export default function ProofSection() {
                 ))}
               </ul>
               <div className="border-t border-[#24486f] px-4 py-3 text-xs text-slate-400">
-                Facebook Ads - Leads generes en continu
+                Facebook Ads — Leads générés en continu
               </div>
             </div>
 
@@ -115,11 +115,11 @@ export default function ProofSection() {
 
         <div className="mt-10 text-center">
           <p className="text-base text-slate-300 md:text-2xl">
-            <strong className="text-slate-100">Vous aussi,</strong> recevez des prospects qualifies directement
-            dans votre boite mail - sans commission, sans intermediaire.
+            <strong className="text-slate-100">Vous aussi,</strong> recevez des prospects qualifiés directement
+            dans votre boîte mail — sans commission, sans intermédiaire.
           </p>
           <Link href={contact.contactForm} className="btn-primary mt-6">
-            Je veux des leads comme ca
+            Je veux des leads comme ça
           </Link>
         </div>
       </div>

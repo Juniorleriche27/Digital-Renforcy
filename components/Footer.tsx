@@ -10,8 +10,8 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-300 md:text-xl">
-              Agence Web Hybride - Developpement web intelligent et solutions numeriques automatisees.
-              Nous transformons le digital en force operationnelle.
+              Agence Web Hybride — Développement web intelligent et solutions numériques automatisées.
+              Nous transformons le digital en force opérationnelle.
               <span className="text-slate-500"> Code APE 6201Z</span>
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
@@ -29,7 +29,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100 md:text-xl">
-              Nos activites
+              Nos activités
             </h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.activities.map((link) => (
@@ -65,14 +65,14 @@ export default function Footer() {
               <li className="whitespace-pre-line">📍 {contact.address}</li>
             </ul>
             <Link href={contact.contactForm} className="btn-primary mt-6 w-full">
-              ✈ Nous ecrire
+              ✈ Nous écrire
             </Link>
           </div>
         </div>
 
         <div className="mt-10 border-t border-[#1f4069] pt-7">
           <p className="text-xs leading-relaxed text-slate-400 md:text-sm">
-            © 2026 Digital Renforcy - Agence Web Hybride. Tous droits reserves. Code APE 6201Z - Programmation informatique - Toutes nos activites reposent sur la programmation et le developpement informatique.
+            © 2026 Digital Renforcy — Agence Web Hybride. Tous droits réservés. Code APE 6201Z — Programmation informatique — Toutes nos activités reposent sur la programmation et le développement informatique.
           </p>
           <ul className="mt-4 flex flex-wrap gap-5 text-xs text-slate-300 md:text-sm">
             {footerLinks.legal.map((link) => (
