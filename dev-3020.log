@@ -1,0 +1,907 @@
+
+> digital-renforcy@0.1.0 dev
+> next dev --port 3020
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3020
+
+ ✓ Starting...
+ ✓ Ready in 2.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 2.5s (535 modules)
+ GET / 200 in 2714ms
+ GET / 200 in 80ms
+ ⨯ ./components/ui/Logo.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ui\Logo.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ui/Logo.tsx
+./components/Header.tsx
+ ⨯ ./components/ui/Logo.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ui\Logo.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ui/Logo.tsx
+./components/Header.tsx
+ ✓ Compiled in 385ms (566 modules)
+ ✓ Compiled /_not-found in 124ms (555 modules)
+ GET /logo-dr.png 404 in 229ms
+ ⨯ The requested resource isn't a valid image for /logo-dr.png received text/html; charset=utf-8
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\app\_not-found\page.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:68132
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:68181)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1567ms (776 modules)
+ GET / 500 in 1845ms
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:68132
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:68181)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\pages\\_document.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js
+- C:\Digital Renforcy\digital-renforcy\.next\server\pages\_document.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\utils.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js
+- C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1448:15)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:198:28)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Digital Renforcy\digital-renforcy\.next\server\webpack-runtime.js:162:22)
+    at C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:68132
+    at Object.<anonymous> (C:\Digital Renforcy\digital-renforcy\.next\server\app\page.js:1:68181)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1548:12)
+    at mod.require (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\require.js:109:84)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:710:36)
+    at async DevServer.findPageComponents (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\webpack-runtime.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\.next\\server\\pages\\_document.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Digital Renforcy\\digital-renforcy\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ GET / 500 in 162ms
+ ⨯ ./lib/data.ts
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\lib\data.ts
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./lib/data.ts
+./components/FloatingAssistant.tsx
+ ⨯ ./lib/data.ts
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\lib\data.ts
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./lib/data.ts
+./components/FloatingAssistant.tsx
+ ✓ Compiled in 350ms (776 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 79ms
+Warning: Each child in a list should have a unique "key" prop.
+
+Check the top-level render call using <div>. See https://reactjs.org/link/warning-keys for more information.
+    at div
+ ⨯ Internal error: Error: Objects are not valid as a React child (found: object with keys {name, color}). If you meant to render a collection of children, use an array instead.
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:51035)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+digest: "264711790"
+ ⨯ Internal error: Error: Objects are not valid as a React child (found: object with keys {name, color}). If you meant to render a collection of children, use an array instead.
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:51035)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+digest: "264711790"
+ GET / 500 in 199ms
+ ✓ Compiled /_not-found in 278ms (779 modules)
+ GET /_next/static/chunks/main-app.js 404 in 369ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 369ms
+ ⨯ ./app/globals.css
+Module not found: Can't resolve 'C:\Digital Renforcy\digital-renforcy\app\globals.css'
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/globals.css
+Error: ENOENT: no such file or directory, open 'C:\Digital Renforcy\digital-renforcy\app\globals.css'
+
+Import trace for requested module:
+./app/globals.css
+./app/layout.tsx
+ ✓ Compiled in 413ms (793 modules)
+ ✓ Compiled in 196ms (793 modules)
+ ⨯ ./components/ui/Logo.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ui\Logo.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ui/Logo.tsx
+./components/Header.tsx
+ ⨯ ./components/ui/Logo.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ui\Logo.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ui/Logo.tsx
+./components/Header.tsx
+ ✓ Compiled in 360ms (790 modules)
+ ⨯ ./components/ui/SectionHeading.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ui\SectionHeading.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ui/SectionHeading.tsx
+./components/PricingLeadFormSection.tsx
+ ⨯ ./components/ui/SectionHeading.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ui\SectionHeading.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ui/SectionHeading.tsx
+./components/PricingLeadFormSection.tsx
+ ✓ Compiled in 257ms (790 modules)
+ ✓ Compiled in 97ms (461 modules)
+ ✓ Compiled in 259ms (790 modules)
+ ✓ Compiled in 201ms (790 modules)
+ ✓ Compiled in 197ms (790 modules)
+ ⨯ ./components/Header.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\Header.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/Header.tsx
+ ⨯ ./components/Header.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\Header.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/Header.tsx
+./app/page.tsx
+ ✓ Compiled in 321ms (790 modules)
+ ✓ Compiled in 207ms (790 modules)
+ ⨯ ./components/Hero.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\Hero.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/Hero.tsx
+./app/page.tsx
+ GET / 500 in 973ms
+ ✓ Compiled /_not-found in 347ms (793 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/ad0a596342405793.webpack.hot-update.json 404 in 498ms
+ GET / 200 in 64ms
+Warning: Each child in a list should have a unique "key" prop.
+
+Check the top-level render call using <div>. See https://reactjs.org/link/warning-keys for more information.
+    at div
+ ⨯ Internal error: Error: Objects are not valid as a React child (found: object with keys {name, color}). If you meant to render a collection of children, use an array instead.
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:51035)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+digest: "264711790"
+ ⨯ Internal error: Error: Objects are not valid as a React child (found: object with keys {name, color}). If you meant to render a collection of children, use an array instead.
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:51035)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+digest: "264711790"
+ GET / 500 in 127ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 33ms
+ GET /_next/static/chunks/main-app.js 404 in 32ms
+ ✓ Compiled in 247ms (793 modules)
+ ⨯ ./components/StatsPanel.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\StatsPanel.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/StatsPanel.tsx
+./app/page.tsx
+ ✓ Compiled in 245ms (793 modules)
+ ✓ Compiled in 235ms (793 modules)
+ ⨯ ./components/CountersBar.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\CountersBar.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/CountersBar.tsx
+./app/page.tsx
+ ✓ Compiled in 250ms (790 modules)
+ ✓ Compiled in 182ms (790 modules)
+ ⨯ ./components/ProblemsSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ProblemsSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ProblemsSection.tsx
+./app/page.tsx
+ ✓ Compiled in 312ms (790 modules)
+ ⨯ ./components/SolutionsSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\SolutionsSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/SolutionsSection.tsx
+./app/page.tsx
+ ✓ Compiled in 360ms (790 modules)
+ ✓ Compiled in 161ms (790 modules)
+ ⨯ ./components/EcosystemSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\EcosystemSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/EcosystemSection.tsx
+./app/page.tsx
+ ✓ Compiled in 194ms (790 modules)
+ ✓ Compiled in 190ms (790 modules)
+ ⨯ ./components/CombinedOfferBanner.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\CombinedOfferBanner.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/CombinedOfferBanner.tsx
+./app/page.tsx
+ ✓ Compiled in 161ms (790 modules)
+ ✓ Compiled in 193ms (790 modules)
+ ⨯ ./components/SectorsSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\SectorsSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/SectorsSection.tsx
+./app/page.tsx
+ ✓ Compiled in 205ms (790 modules)
+ ⨯ ./components/WebDevSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\WebDevSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/WebDevSection.tsx
+./app/page.tsx
+ ✓ Compiled in 211ms (790 modules)
+ ✓ Compiled in 186ms (790 modules)
+ ⨯ ./components/ProofSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ProofSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ProofSection.tsx
+./app/page.tsx
+ ✓ Compiled in 187ms (790 modules)
+ ⨯ ./components/ComparisonSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ComparisonSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ComparisonSection.tsx
+./app/page.tsx
+ ✓ Compiled in 193ms (790 modules)
+ ⨯ ./components/ProcessSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ProcessSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ProcessSection.tsx
+./app/page.tsx
+ ✓ Compiled in 231ms (790 modules)
+ ⨯ ./components/MethodSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\MethodSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/MethodSection.tsx
+./app/page.tsx
+ ✓ Compiled in 215ms (790 modules)
+ ✓ Compiled in 239ms (790 modules)
+ ⨯ ./components/TestimonialsSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\TestimonialsSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/TestimonialsSection.tsx
+./app/page.tsx
+ ✓ Compiled in 229ms (789 modules)
+ ⨯ ./components/PricingLeadFormSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\PricingLeadFormSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/PricingLeadFormSection.tsx
+ ⨯ ./components/PricingLeadFormSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\PricingLeadFormSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/PricingLeadFormSection.tsx
+./app/page.tsx
+ ✓ Compiled in 221ms (787 modules)
+ ✓ Compiled in 112ms (460 modules)
+ ⨯ ./components/AuditCTASection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\AuditCTASection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/AuditCTASection.tsx
+./app/page.tsx
+ ✓ Compiled in 201ms (787 modules)
+ ⨯ ./components/Footer.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\Footer.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/Footer.tsx
+./app/page.tsx
+ ✓ Compiled in 240ms (787 modules)
+ GET / 200 in 152ms
+ ✓ Compiled /_not-found in 282ms (776 modules)
+ GET /logo-dr.png 404 in 367ms
+ ⨯ The requested resource isn't a valid image for /logo-dr.png received text/html; charset=utf-8
+ GET /_next/static/chunks/main-app.js?v=1776458292956 404 in 365ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 362ms
+ ✓ Compiled in 412ms (787 modules)
+ ✓ Compiled in 313ms (787 modules)
+ ✓ Compiled in 188ms (787 modules)
+ ⨯ ./components/PricingLeadFormSection.tsx
+Error: 
+  [31mx[0m Expected ':', got ')'
+    ,-[[36;1;4mC:\Digital Renforcy\digital-renforcy\components\PricingLeadFormSection.tsx[0m:29:1]
+ [2m29[0m | 
+ [2m30[0m |       if (!response.ok) {
+ [2m31[0m |         const payload = (await response.json()) as { error?: string };
+ [2m32[0m |         throw new Error(payload.error ? "Impossible d envoyer la demande.");
+    : [31;1m                                                                          ^[0m
+ [2m33[0m |       }
+ [2m34[0m | 
+ [2m35[0m |       setStatus("success");
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/PricingLeadFormSection.tsx
+./app/page.tsx
+ ✓ Compiled in 473ms (787 modules)
+ ⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve '@/components/SiteEffects'
+[0m [90m 1 |[39m [36mimport[39m type { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m[33m;[39m[0m
+[0m [90m 2 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mSiteEffects[39m [36mfrom[39m [32m"@/components/SiteEffects"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m[0m
+[0m [90m 5 |[39m [36mexport[39m [36mconst[39m metadata[33m:[39m [33mMetadata[39m [33m=[39m {[0m
+[0m [90m 6 |[39m   title[33m:[39m [32m"Digital Renforcy - Agence Web Hybride"[39m[33m,[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ✓ Compiled in 364ms (790 modules)
+ ✓ Compiled in 301ms (790 modules)
+ ⨯ ./app/globals.css
+Module not found: Can't resolve 'C:\Digital Renforcy\digital-renforcy\app\globals.css'
+
+https://nextjs.org/docs/messages/module-not-found
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|javascript/auto|C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\next-flight-css-loader.js??ruleSet[1].rules[13].oneOf[12].use[0]!C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\compiled\mini-css-extract-plugin\loader.js??ruleSet[1].rules[13].oneOf[12].use[1]!C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[2]!C:\Digital Renforcy\digital-renforcy\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[3]!C:\Digital Renforcy\digital-renforcy\app\globals.css|app-pages-browser': No serializer registered for ModuleNotFoundError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> ModuleNotFoundError
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\7.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\7.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack failed from C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development.pack.gz: Error: invalid code lengths set
+ ✓ Compiled in 396ms (790 modules)
+ ⨯ ./components/ProofSection.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\ProofSection.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/ProofSection.tsx
+./app/page.tsx
+ ✓ Compiled in 243ms (790 modules)
+ ✓ Compiled in 121ms (461 modules)
+ ⨯ ./components/Hero.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\Hero.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/Hero.tsx
+./app/page.tsx
+ ✓ Compiled in 256ms (790 modules)
+ ✓ Compiled in 409ms (790 modules)
+ ✓ Compiled in 111ms (461 modules)
+ ✓ Compiled in 217ms (790 modules)
+ ✓ Compiled in 791ms (776 modules)
+ ⨯ ./components/Header.tsx
+Error: Failed to read source code from C:\Digital Renforcy\digital-renforcy\components\Header.tsx
+
+Caused by:
+    Le fichier spécifié est introuvable. (os error 2)
+
+Import trace for requested module:
+./components/Header.tsx
+./app/page.tsx
+ ✓ Compiled in 824ms (792 modules)
+ ✓ Compiled in 288ms (778 modules)
+ ✓ Compiled in 432ms (462 modules)
+ ✓ Compiled in 176ms (462 modules)
+ ✓ Compiled in 216ms (462 modules)
+ ✓ Compiled in 135ms (462 modules)
+ ✓ Compiled in 144ms (462 modules)
+ ✓ Compiled in 154ms (462 modules)
+ ✓ Compiled in 424ms (792 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\0.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\0.pack.gz'
+ ✓ Compiled in 433ms (792 modules)
+ ✓ Compiled in 197ms (462 modules)
+ ✓ Compiled in 229ms (462 modules)
+ ✓ Compiled in 25.1s (792 modules)
+ ✓ Compiled in 9.6s (462 modules)
+ ✓ Compiled in 2.3s (462 modules)
+ ✓ Compiled in 2.5s (462 modules)
+ ✓ Compiled in 1727ms (462 modules)
+ ✓ Compiled in 2.1s (462 modules)
+ ✓ Compiled in 9.2s (778 modules)
+ ✓ Compiled in 1692ms (792 modules)
+ ✓ Compiled in 106ms (462 modules)
+ ✓ Compiled in 211ms (462 modules)
+ ✓ Compiled in 1224ms (778 modules)
+ GET / 200 in 198ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 716ms (781 modules)
+ GET /_next/static/css/app/layout.css?v=1776472296031 404 in 820ms
+ GET /_next/static/chunks/main-app.js?v=1776472296031 404 in 819ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 814ms
+ GET /_next/static/chunks/app/layout.js 404 in 813ms
+ ✓ Compiled in 434ms (792 modules)
+ ✓ Compiled in 477ms (792 modules)
+ ✓ Compiled in 666ms (792 modules)
+ ✓ Compiled in 158ms (462 modules)
+ ✓ Compiled in 352ms (778 modules)
+ ✓ Compiled in 179ms (462 modules)
+ ✓ Compiled in 214ms (778 modules)
+ ✓ Compiled in 1479ms (792 modules)
+ ✓ Compiled in 124ms (462 modules)
+ ✓ Compiled in 1189ms (792 modules)
+ ✓ Compiled in 403ms (792 modules)
+ ✓ Compiled in 233ms (462 modules)
+ ✓ Compiled in 221ms (462 modules)
+ ✓ Compiled in 1902ms (778 modules)
+ ✓ Compiled in 502ms (778 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\2.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\2.pack.gz'
+ ✓ Compiled in 137ms (462 modules)
+ ✓ Compiled in 420ms (778 modules)
+ ✓ Compiled in 175ms (462 modules)
+ ✓ Compiled in 284ms (778 modules)
+ ✓ Compiled in 877ms (792 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\1.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\1.pack.gz'
+ ✓ Compiled in 158ms (462 modules)
+ ✓ Compiled in 234ms (778 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\0.pack.gz_' -> 'C:\Digital Renforcy\digital-renforcy\.next\cache\webpack\client-development\0.pack.gz'
+ ✓ Compiled in 145ms (462 modules)
+ ✓ Compiled in 372ms (778 modules)
+ ✓ Compiled in 703ms (778 modules)
+ ✓ Compiled in 348ms (792 modules)
+ ✓ Compiled in 192ms (462 modules)

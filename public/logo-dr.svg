@@ -1,0 +1,44 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B52C9" />
+      <stop offset="1" stop-color="#0A3F99" />
+    </linearGradient>
+    <linearGradient id="dFill" x1="96" y1="96" x2="320" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3D8E45" />
+      <stop offset="1" stop-color="#164F2A" />
+    </linearGradient>
+    <linearGradient id="stroke" x1="144" y1="112" x2="388" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F6FA" />
+      <stop offset="1" stop-color="#D4D8E2" />
+    </linearGradient>
+    <linearGradient id="rFill" x1="246" y1="106" x2="410" y2="402" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F7FB" />
+      <stop offset="1" stop-color="#DEE2EB" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="512" fill="url(#bg)" />
+
+  <path
+    d="M110 108H242C316 108 372 161 372 232C372 303 316 356 242 356H182V404H110V108ZM182 172V292H240C274 292 299 266 299 232C299 198 274 172 240 172H182Z"
+    fill="url(#dFill)"
+    stroke="url(#stroke)"
+    stroke-width="18"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M242 108H328C403 108 460 161 460 232C460 288 425 336 373 355L434 404H346L297 364H254V404H182V108H242ZM254 172V292H325C360 292 386 266 386 232C386 198 360 172 325 172H254Z"
+    fill="url(#rFill)"
+    stroke="url(#stroke)"
+    stroke-width="18"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M182 172H254V292H182V172Z"
+    fill="#0A53C6"
+    opacity="0.95"
+  />
+</svg>
