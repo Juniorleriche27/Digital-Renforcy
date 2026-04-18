@@ -1,12 +1,12 @@
 import Link from "next/link";
 import {
-  acquisitionSources,
   chartMonths,
   chartPoints,
   contact,
   dashboardKpis,
   heroTags,
 } from "@/lib/data";
+import HeroSourceBars from "@/components/HeroSourceBars";
 
 export default function Hero() {
   return (
@@ -153,28 +153,7 @@ function DashboardCard() {
 
         <div>
           <p className="mb-3 text-sm font-semibold text-slate-200">SOURCES D'ACQUISITION</p>
-          <div className="space-y-3">
-            {acquisitionSources.map((source, index) => (
-              <div key={source.label}>
-                <div className="mb-1 flex items-center justify-between text-sm text-slate-300">
-                  <span>{source.label}</span>
-                  <span className="font-semibold text-slate-100">{source.value}%</span>
-                </div>
-                <div className="h-3 rounded-full bg-[#173451]">
-                  <div
-                    className={`hero-source-bar h-full rounded-full bg-gradient-to-r ${source.color}`}
-                    style={
-                      {
-                        "--target-width": `${source.value}%`,
-                        "--bar-delay": `${0.45 + index * 0.18}s`,
-                        "--bar-osc-delay": `${0.45 + index * 0.18 + 1.15}s`,
-                      } as { [key: string]: string }
-                    }
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
+          <HeroSourceBars />
         </div>
 
         <div className="rounded-xl border border-[#275f44] bg-[#0f3529] px-4 py-3 text-sm font-semibold text-emerald-400">
