@@ -13,26 +13,36 @@ export default function Hero() {
     <section className="dark-section pb-12 pt-14 md:pb-14 md:pt-20">
       <div className="container-shell grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
         <div>
-          <span className="badge-chip text-[11px] normal-case tracking-normal text-[#78b0ff]">
+          <span className="badge-chip hero-badge-anim text-[11px] normal-case tracking-normal text-[#78b0ff]">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
             Agence Marketing Hybride en France
           </span>
 
           <h1 className="mt-6 max-w-3xl text-4xl font-bold leading-[0.98] tracking-tight text-slate-100 sm:text-5xl md:text-7xl">
-            Technique,
-            <br />
-            automatisation &
-            <br />
-            <span className="title-gradient">innovation digitale</span>
+            <span className="hero-line" style={{ "--line-delay": "0.35s" } as { [key: string]: string }}>
+              Technique,
+            </span>
+            <span className="hero-line" style={{ "--line-delay": "0.55s" } as { [key: string]: string }}>
+              automatisation &amp;
+            </span>
+            <span className="hero-line" style={{ "--line-delay": "0.75s" } as { [key: string]: string }}>
+              <span className="title-gradient">innovation digitale</span>
+            </span>
           </h1>
 
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg md:text-4xl">
+          <p
+            className="hero-fade-up mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg md:text-4xl"
+            style={{ "--fade-delay": "0.95s" } as { [key: string]: string }}
+          >
             Digital Renforcy combine <strong>expertise technique</strong> et innovation numérique :
             développement web intelligent, solutions numériques automatisées et plateformes d'entraînement
             en ligne — une approche hybride et performante.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div
+            className="hero-fade-up mt-8 flex flex-wrap gap-4"
+            style={{ "--fade-delay": "1.15s" } as { [key: string]: string }}
+          >
             <Link href={contact.contactForm} className="btn-primary">
               Démarrer mon projet
             </Link>
@@ -41,7 +51,10 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="no-scrollbar mt-8 flex flex-wrap gap-3">
+          <div
+            className="hero-fade-up no-scrollbar mt-8 flex flex-wrap gap-3"
+            style={{ "--fade-delay": "1.3s" } as { [key: string]: string }}
+          >
             {heroTags.map((tag, index) => (
               <span
                 key={tag}
@@ -153,7 +166,7 @@ function DashboardCard() {
                     style={
                       {
                         "--target-width": `${source.value}%`,
-                        animationDelay: `${0.45 + index * 0.15}s`,
+                        "--bar-delay": `${0.45 + index * 0.15}s`,
                       } as { [key: string]: string }
                     }
                   />

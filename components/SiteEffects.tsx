@@ -14,6 +14,12 @@ export default function SiteEffects() {
       return;
     }
 
+    // Pre-mark child cards so they start hidden and stagger in on reveal
+    targets.forEach((target) => {
+      const childCards = Array.from(target.querySelectorAll<HTMLElement>("article, .dark-card"));
+      childCards.forEach((card) => card.classList.add("card-anim"));
+    });
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -27,6 +33,12 @@ export default function SiteEffects() {
           }
           element.classList.add("is-visible");
           observer.unobserve(element);
+
+          // Stagger each card inside the revealed section
+          const childCards = Array.from(element.querySelectorAll<HTMLElement>(".card-anim"));
+          childCards.forEach((card, j) => {
+            setTimeout(() => card.classList.add("anim-go"), j * 90 + 120);
+          });
         });
       },
       {
@@ -38,6 +50,20 @@ export default function SiteEffects() {
     targets.forEach((target) => observer.observe(target));
 
     return () => observer.disconnect();
+  }, [pathname]);
+
+  // Assign float animation + staggered delays to all card-like elements
+  useEffect(() => {
+    const els = Array.from(
+      document.querySelectorAll<HTMLElement>(".dark-card, article"),
+    );
+    els.forEach((el, i) => {
+      // Add float-el so article elements (without dark-card) also animate
+      el.classList.add("float-el");
+      // Negative delay = different starting phase immediately, no waiting
+      el.style.setProperty("--float-delay", `-${(i % 5) * 0.85}s`);
+      el.style.setProperty("--float-dur", `${3.8 + (i % 4) * 0.55}s`);
+    });
   }, [pathname]);
 
   useEffect(() => {
