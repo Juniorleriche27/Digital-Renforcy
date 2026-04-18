@@ -160,13 +160,14 @@ function DashboardCard() {
                   <span>{source.label}</span>
                   <span className="font-semibold text-slate-100">{source.value}%</span>
                 </div>
-                <div className="h-2 rounded-full bg-[#173451]">
+                <div className="h-3 rounded-full bg-[#173451]">
                   <div
                     className={`hero-source-bar h-full rounded-full bg-gradient-to-r ${source.color}`}
                     style={
                       {
                         "--target-width": `${source.value}%`,
-                        "--bar-delay": `${0.45 + index * 0.15}s`,
+                        "--bar-delay": `${0.45 + index * 0.18}s`,
+                        "--bar-osc-delay": `${0.45 + index * 0.18 + 1.15}s`,
                       } as { [key: string]: string }
                     }
                   />

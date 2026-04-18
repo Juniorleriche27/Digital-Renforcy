@@ -36,9 +36,9 @@ export const chartPoints = [4, 18, 24, 23, 34, 46, 50, 52, 61];
 export const chartMonths = ["Oct", "Nov", "Déc", "Jan", "Fév", "Mar"];
 
 export const acquisitionSources = [
-  { label: "SEO", value: 72, color: "from-indigo-500 to-blue-400" },
-  { label: "Chatbot IA", value: 51, color: "from-cyan-500 to-sky-400" },
-  { label: "Formulaires", value: 34, color: "from-emerald-500 to-lime-400" },
+  { label: "SEO", value: 80, color: "from-blue-500 to-indigo-400" },
+  { label: "Chatbot IA", value: 55, color: "from-cyan-400 to-teal-400" },
+  { label: "Formulaires", value: 42, color: "from-emerald-400 to-green-400" },
 ];
 
 export const counters = [
