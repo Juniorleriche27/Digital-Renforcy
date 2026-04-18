@@ -377,11 +377,11 @@ export const footerLinks = {
 };
 
 export const socialLinks = [
-  { label: "LinkedIn", href: "#", key: "in" },
-  { label: "Facebook", href: "#", key: "f" },
-  { label: "Instagram", href: "#", key: "ig" },
-  { label: "YouTube", href: "#", key: "yt" },
-  { label: "TikTok", href: "#", key: "tt" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/102108848/", key: "in" },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61576549082226", key: "f" },
+  { label: "Instagram", href: "https://www.instagram.com/digitalrenforcy", key: "ig" },
+  { label: "YouTube", href: "https://www.youtube.com/@DigitalRenforcy-jd4ru", key: "yt" },
+  { label: "TikTok", href: "https://www.tiktok.com/@digitalrenforcy", key: "tt" },
   { label: "Calendly", href: "https://calendly.com/ibrahim-b-digitalrenforcy/30-minutes-de-discussion", key: "cal" },
 ];
 
