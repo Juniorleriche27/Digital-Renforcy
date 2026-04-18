@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Digital Renforcy - Agence Web Hybride",
   description:
     "Landing page Digital Renforcy: developpement web intelligent et acquisition client automatisee.",
+  icons: {
+    icon: "/logo-dr.svg",
+    shortcut: "/logo-dr.svg",
+    apple: "/logo-dr.svg",
+  },
 };
 
 export default function RootLayout({
