@@ -11,7 +11,7 @@ export default function ProofSection() {
           <span className="badge-chip border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
             PREUVES REELLES
           </span>
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Des leads <span className="title-gradient">qui arrivent vraiment</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
@@ -98,7 +98,7 @@ export default function ProofSection() {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-3 gap-4">
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
               {proofStats.map((stat, index) => (
                 <div
                   key={stat.label}

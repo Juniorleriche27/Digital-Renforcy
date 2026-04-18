@@ -7,7 +7,7 @@ export default function SectorsSection() {
       <div className="container-shell">
         <div className="mx-auto max-w-5xl text-center">
           <span className="badge-chip border-cyan-500/30 bg-cyan-500/10 text-cyan-300">🧭 NOS SECTEURS</span>
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Deux univers, <span className="title-gradient">une meme ambition</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">

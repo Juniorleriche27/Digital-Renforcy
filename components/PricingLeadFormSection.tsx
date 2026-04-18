@@ -43,7 +43,7 @@ export default function PricingLeadFormSection() {
     <section id="pricing" className="dark-section">
       <div className="container-shell">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Choisissez votre <span className="title-gradient">premier pas</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
@@ -51,7 +51,7 @@ export default function PricingLeadFormSection() {
           </p>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-6xl gap-4 md:grid-cols-3">
+        <div className="mx-auto mt-10 grid max-w-6xl gap-4 sm:grid-cols-2 md:grid-cols-3">
           {pricingCards.map((card, index) => (
             <article key={card.title} className="dark-card rounded-2xl border border-[#274f7c] p-6">
               <div className="mb-3 flex items-start justify-between">

@@ -4,9 +4,9 @@ export default function AuditCTASection() {
   return (
     <section id="audit" className="dark-section pt-8">
       <div className="container-shell">
-        <div className="dark-panel rounded-[34px] border border-[#2b5685] px-8 py-12 text-center">
+        <div className="dark-panel rounded-[34px] border border-[#2b5685] px-4 py-8 text-center sm:px-8 sm:py-12">
           <span className="badge-chip">🚀 AUDIT GRATUIT</span>
-          <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mx-auto mt-5 max-w-5xl text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Pret a generer plus de clients - sans payer de commissions ?
           </h2>
           <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">

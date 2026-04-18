@@ -7,7 +7,7 @@ export default function SolutionsSection() {
       <div className="container-shell">
         <div className="mx-auto max-w-5xl text-center">
           <span className="badge-chip">🧱 NOS SOLUTIONS</span>
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             L approche <span className="title-gradient">hybride Digital Renforcy</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">

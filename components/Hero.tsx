@@ -18,7 +18,7 @@ export default function Hero() {
             Agence Marketing Hybride en France
           </span>
 
-          <h1 className="mt-6 max-w-3xl text-5xl font-bold leading-[0.98] tracking-tight text-slate-100 md:text-7xl">
+          <h1 className="mt-6 max-w-3xl text-4xl font-bold leading-[0.98] tracking-tight text-slate-100 sm:text-5xl md:text-7xl">
             Technique,
             <br />
             automatisation &
@@ -26,7 +26,7 @@ export default function Hero() {
             <span className="title-gradient">innovation digitale</span>
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 md:text-4xl">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg md:text-4xl">
             Digital Renforcy combine <strong>expertise technique</strong> et innovation numerique :
             developpement web intelligent, solutions numeriques automatisees et plateformes d
             entrainement en ligne - une approche hybride et performante.

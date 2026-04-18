@@ -9,7 +9,7 @@ export default function EcosystemSection() {
             <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
               🧩 ECOSYSTEME DIGITAL
             </span>
-            <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+            <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
               Toutes les plateformes <span className="title-gradient">connectees pour vous</span>
             </h2>
             <p className="mt-4 text-base text-slate-300 md:text-2xl">
@@ -25,7 +25,7 @@ export default function EcosystemSection() {
                   <p className="mt-1 text-sm text-slate-400 md:text-xl">{group.subtitle}</p>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {group.tools.map((tool) => (
                     <div
                       key={tool.name}

@@ -16,7 +16,7 @@ export default function SectionHeading({
   return (
     <div className={`max-w-3xl ${alignClass}`}>
       {eyebrow ? <span className="badge-chip">{eyebrow}</span> : null}
-      <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-100 md:text-5xl md:leading-[1.1]">
+      <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl md:leading-[1.1]">
         {title}
       </h2>
       {subtitle ? (

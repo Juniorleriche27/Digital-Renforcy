@@ -20,7 +20,7 @@ export default function TestimonialsSection() {
           <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
             ⭐ TEMOIGNAGES
           </span>
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Ce que disent nos clients
             <br />
             <span className="title-gradient">renovation & formation</span>
@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {testimonials.map((testimonial) => (
             <article
               key={testimonial.author}

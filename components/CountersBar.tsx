@@ -4,7 +4,7 @@ export default function CountersBar() {
   return (
     <section className="border-b border-[#1f4069] pb-8 pt-6">
       <div className="container-shell">
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {counters.map((counter, index) => (
             <article key={counter.label} className="flex items-center gap-4">
               <div className="grid h-14 w-14 place-items-center rounded-2xl border border-[#214a78] bg-[#0f2a4f] text-2xl">

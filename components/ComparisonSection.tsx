@@ -8,7 +8,7 @@ export default function ComparisonSection() {
           <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
             ⚖️ COMPARATIF
           </span>
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Pourquoi choisir <span className="title-gradient">Digital Renforcy</span> ?
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">
@@ -16,8 +16,8 @@ export default function ComparisonSection() {
           </p>
         </div>
 
-        <div className="mt-10 overflow-hidden rounded-2xl border border-[#24486f]">
-          <table className="w-full text-left text-sm">
+        <div className="mt-10 overflow-x-auto rounded-2xl border border-[#24486f]">
+          <table className="w-full min-w-[540px] text-left text-sm">
             <thead className="bg-[#132d4e] text-slate-300">
               <tr>
                 {comparison.headers.map((header, index) => (

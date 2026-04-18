@@ -8,7 +8,7 @@ export default function MethodSection() {
           <span className="badge-chip border-cyan-500/30 bg-cyan-500/10 text-cyan-300">
             🧬 NOTRE METHODE
           </span>
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             De l audit a vos <span className="title-gradient">premiers leads</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-2xl">

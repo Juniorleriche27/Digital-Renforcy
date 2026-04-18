@@ -7,7 +7,7 @@ export default function WebDevSection() {
       <div className="container-shell grid items-center gap-10 lg:grid-cols-[1fr_0.95fr]">
         <div>
           <span className="badge-chip">👨‍💻 1 DEVELOPPEMENT WEB INTELLIGENT</span>
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Un site web qui <span className="title-gradient">travaille pour vous</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-2xl">

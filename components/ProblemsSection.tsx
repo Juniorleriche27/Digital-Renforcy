@@ -9,7 +9,7 @@ export default function ProblemsSection() {
           <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
             🔥 VOUS RECONNAISSEZ-VOUS ?
           </span>
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
             Ces <span className="title-gradient">problemes</span> freinent votre croissance
           </h2>
         </div>

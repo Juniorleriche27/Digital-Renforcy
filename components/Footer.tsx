@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-[#1f4069] bg-[#081d3a] pb-10 pt-14">
       <div className="container-shell">
-        <div className="grid gap-10 md:grid-cols-[1.35fr_0.7fr_0.7fr_1fr]">
+        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-[1.35fr_0.7fr_0.7fr_1fr]">
           <div>
             <Logo />
             <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-300 md:text-xl">
