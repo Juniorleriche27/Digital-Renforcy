@@ -1,54 +1,52 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import { acquisitionSources } from "@/lib/data";
 
 export default function HeroSourceBars() {
-  const barsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const [widths, setWidths] = useState<number[]>(acquisitionSources.map(() => 0));
+  const [phase, setPhase] = useState<boolean[]>(acquisitionSources.map(() => true));
 
+  // Croissance initiale
   useEffect(() => {
-    acquisitionSources.forEach((source, i) => {
-      const bar = barsRef.current[i];
-      if (!bar) return;
-
-      const growDelay = 500 + i * 200;
-      const oscInterval = 2000 + i * 300;
-
-      // Croissance initiale
-      const growTimer = setTimeout(() => {
-        bar.style.width = `${source.value}%`;
-      }, growDelay);
-
-      // Oscillation : plein → réduit → plein en boucle
-      let full = true;
-      const oscTimer = setInterval(() => {
-        full = !full;
-        bar.style.width = full ? `${source.value}%` : `${Math.round(source.value * 0.52)}%`;
-      }, oscInterval);
-
-      return () => {
-        clearTimeout(growTimer);
-        clearInterval(oscTimer);
-      };
-    });
+    const t = setTimeout(() => {
+      setWidths(acquisitionSources.map((s) => s.value));
+    }, 400);
+    return () => clearTimeout(t);
   }, []);
+
+  // Oscillation en boucle par barre
+  useEffect(() => {
+    const timers = acquisitionSources.map((_, i) =>
+      setInterval(() => {
+        setPhase((prev) => {
+          const next = [...prev];
+          next[i] = !next[i];
+          return next;
+        });
+      }, 1800 + i * 400),
+    );
+    return () => timers.forEach(clearInterval);
+  }, []);
+
+  const getWidth = (i: number) => {
+    const full = acquisitionSources[i].value;
+    return phase[i] ? full : Math.round(full * 0.5);
+  };
 
   return (
     <div className="space-y-3">
-      {acquisitionSources.map((source, index) => (
+      {acquisitionSources.map((source, i) => (
         <div key={source.label}>
           <div className="mb-1 flex items-center justify-between text-sm text-slate-300">
             <span>{source.label}</span>
             <span className="font-semibold text-slate-100">{source.value}%</span>
           </div>
-          <div className="h-3 rounded-full bg-[#173451]">
+          <div className="h-3 overflow-hidden rounded-full bg-[#173451]">
             <div
-              ref={(el) => {
-                barsRef.current[index] = el;
-              }}
               className={`h-full rounded-full bg-gradient-to-r ${source.color}`}
               style={{
-                width: "0%",
+                width: `${getWidth(i)}%`,
                 transition: "width 1.1s cubic-bezier(0.22, 1, 0.36, 1)",
               }}
             />
