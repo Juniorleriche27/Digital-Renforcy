@@ -10,7 +10,7 @@ export default function ServicesFinalCta() {
           <h2 className="mx-auto mt-5 max-w-5xl text-5xl font-bold leading-[0.98] tracking-tight text-slate-100 md:text-7xl">
             Prêt à <span className="title-gradient">digitaliser et automatiser votre acquisition</span> ?
           </h2>
-          <p className="mx-auto mt-6 max-w-4xl text-lg leading-relaxed text-slate-300 md:text-2xl">
+          <p className="mx-auto mt-6 max-w-4xl text-lg leading-relaxed text-slate-300 md:text-xl">
             Audit gratuit de 30 minutes. Nos experts analysent votre situation (rénovation ou
             formation) et construisent votre stratégie Web + Acquisition sur mesure.
           </p>

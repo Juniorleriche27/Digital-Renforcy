@@ -218,7 +218,7 @@ export default function PricingPage() {
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Votre site web <span className="title-gradient">par abonnement</span>
               </h2>
-              <p className="mt-4 text-base text-slate-300 md:text-2xl">
+              <p className="mt-4 text-base text-slate-300 md:text-xl">
                 Création, hébergement, maintenance et modifications dans un abonnement mensuel lisible.
               </p>
             </div>
@@ -286,7 +286,7 @@ export default function PricingPage() {
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Des prospects qualifiés <span className="title-gradient">en automatique</span>
               </h2>
-              <p className="mt-4 text-base text-slate-300 md:text-2xl">
+              <p className="mt-4 text-base text-slate-300 md:text-xl">
                 Tunnels de conversion, chatbots IA, formulaires intelligents et pilotage ROI.
               </p>
             </div>
@@ -318,7 +318,7 @@ export default function PricingPage() {
                   data-delay={`${70 + index * 30}ms`}
                   className="dark-card rounded-2xl p-5"
                 >
-                  <h3 className="text-xl font-bold text-slate-100 md:text-2xl">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-slate-100 md:text-xl">{item.title}</h3>
                   <p className="mt-2 text-sm text-slate-300 md:text-lg">{item.text}</p>
                 </article>
               ))}
@@ -335,7 +335,7 @@ export default function PricingPage() {
               <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Site web + Acquisition — <span className="title-gradient">la stratégie complète</span>
               </h2>
-              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-xl">
                 Un site qui convertit + un système automatisé d'acquisition = la combinaison idéale pour
                 multiplier vos prospects qualifiés.
               </p>
@@ -399,7 +399,7 @@ export default function PricingPage() {
                   data-delay={`${70 + index * 30}ms`}
                   className="dark-card rounded-2xl p-6"
                 >
-                  <summary className="cursor-pointer list-none text-lg font-semibold text-slate-100 md:text-2xl">
+                  <summary className="cursor-pointer list-none text-lg font-semibold text-slate-100 md:text-xl">
                     {item.q}
                   </summary>
                   <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-xl">{item.a}</p>
@@ -416,7 +416,7 @@ export default function PricingPage() {
               <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Prêt à <span className="title-gradient">booster votre présence digitale</span> ?
               </h2>
-              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-xl">
                 Audit gratuit de 30 minutes. Aucun engagement. Nous analysons votre situation et vous
                 proposons la formule la plus adaptée.
               </p>

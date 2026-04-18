@@ -9,7 +9,7 @@ export default function ProblemsSection() {
           <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
             🔥 VOUS RECONNAISSEZ-VOUS ?
           </span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl lg:text-6xl">
             Ces <span className="title-gradient">problèmes</span> freinent votre croissance
           </h2>
         </div>
@@ -31,7 +31,7 @@ export default function ProblemsSection() {
 
               <ul className="space-y-4">
                 {problem.items.map((item) => (
-                  <li key={item} className="flex gap-3 text-base text-slate-300 md:text-2xl">
+                  <li key={item} className="flex gap-3 text-base text-slate-300 md:text-xl">
                     <span className="mt-1.5 text-red-400">●</span>
                     <span>{item}</span>
                   </li>
@@ -42,7 +42,7 @@ export default function ProblemsSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-base text-slate-300 md:text-2xl">
+          <p className="text-base text-slate-300 md:text-xl">
             <strong className="text-slate-100">Digital Renforcy transforme ces defis en forces operationnelles.</strong>{" "}
             Voici comment :
           </p>

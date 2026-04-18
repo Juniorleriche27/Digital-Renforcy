@@ -11,10 +11,10 @@ export default function ProofSection() {
           <span className="badge-chip border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
             PREUVES RÉELLES
           </span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl lg:text-6xl">
             Des leads <span className="title-gradient">qui arrivent vraiment</span>
           </h2>
-          <p className="mt-4 text-base text-slate-300 md:text-2xl">
+          <p className="mt-4 text-base text-slate-300 md:text-xl">
             Voici ce que nos clients reçoivent dans leur boîte mail — chaque jour, automatiquement.
           </p>
         </div>
@@ -114,7 +114,7 @@ export default function ProofSection() {
         </div>
 
         <div className="mt-10 text-center">
-          <p className="text-base text-slate-300 md:text-2xl">
+          <p className="text-base text-slate-300 md:text-xl">
             <strong className="text-slate-100">Vous aussi,</strong> recevez des prospects qualifiés directement
             dans votre boîte mail — sans commission, sans intermédiaire.
           </p>

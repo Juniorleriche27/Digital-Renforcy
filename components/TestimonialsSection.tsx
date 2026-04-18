@@ -20,12 +20,12 @@ export default function TestimonialsSection() {
           <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
             ⭐ TÉMOIGNAGES
           </span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl lg:text-6xl">
             Ce que disent nos clients
             <br />
             <span className="title-gradient">rénovation &amp; formation</span>
           </h2>
-          <p className="mt-4 text-base text-slate-300 md:text-2xl">
+          <p className="mt-4 text-base text-slate-300 md:text-xl">
             Des résultats concrets, mesurables, par des entreprises comme la vôtre.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
                 <span className="text-sm text-slate-300">⚡ {testimonial.tag}</span>
               </div>
 
-              <blockquote className="min-h-[180px] text-base leading-relaxed text-slate-300 md:text-2xl">
+              <blockquote className="min-h-[180px] text-base leading-relaxed text-slate-300 md:text-xl">
                 "{testimonial.quote}"
               </blockquote>
 
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
                   {testimonial.initials}
                 </span>
                 <div>
-                  <p className="text-base font-semibold text-slate-100 md:text-2xl">{testimonial.author}</p>
+                  <p className="text-base font-semibold text-slate-100 md:text-xl">{testimonial.author}</p>
                   <p className="text-xs text-slate-400 md:text-lg">{testimonial.role}</p>
                 </div>
               </div>

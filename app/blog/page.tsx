@@ -104,7 +104,7 @@ export default function BlogPage() {
               <h2 className="mt-4 text-4xl font-bold leading-tight text-slate-100 md:text-6xl">
                 {featuredArticle.title}
               </h2>
-              <p className="mt-5 max-w-5xl text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mt-5 max-w-5xl text-base leading-relaxed text-slate-300 md:text-xl">
                 {featuredArticle.text}
               </p>
               <Link href={featuredArticle.href} className="btn-primary mt-7">
@@ -159,7 +159,7 @@ export default function BlogPage() {
               <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Conseils digitaux <span className="title-gradient">adaptés à votre secteur</span>
               </h2>
-              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-xl">
                 1 email bi-mensuel : les meilleures stratégies pour trouver des clients en rénovation
                 et remplir vos sessions de formation.
               </p>

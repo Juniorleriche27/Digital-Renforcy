@@ -8,10 +8,10 @@ export default function ComparisonSection() {
           <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
             ⚖️ COMPARATIF
           </span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl lg:text-6xl">
             Pourquoi choisir <span className="title-gradient">Digital Renforcy</span> ?
           </h2>
-          <p className="mt-4 text-base text-slate-300 md:text-2xl">
+          <p className="mt-4 text-base text-slate-300 md:text-xl">
             Agence web hybride : développement, automatisation et innovation — vs. les prestataires traditionnels.
           </p>
         </div>
@@ -23,7 +23,7 @@ export default function ComparisonSection() {
                 {comparison.headers.map((header, index) => (
                   <th
                     key={header}
-                    className={`px-5 py-4 font-semibold md:px-6 md:text-xl ${
+                    className={`px-3 py-3 text-xs font-semibold sm:px-5 sm:py-4 sm:text-sm md:px-6 md:text-base ${
                       index === 2 ? "text-[#4f83ff]" : ""
                     }`}
                   >
@@ -35,12 +35,12 @@ export default function ComparisonSection() {
             <tbody>
               {comparison.rows.map((row) => (
                 <tr key={row[0]} className="border-t border-[#24486f] bg-[#102848]">
-                  <td className="px-5 py-4 text-base font-semibold text-slate-100 md:px-6 md:text-xl">{row[0]}</td>
-                  <td className="px-5 py-4 text-base text-slate-400 md:px-6 md:text-xl">
+                  <td className="px-3 py-3 text-xs font-semibold text-slate-100 sm:px-5 sm:py-4 sm:text-sm md:px-6 md:text-base">{row[0]}</td>
+                  <td className="px-3 py-3 text-xs text-slate-400 sm:px-5 sm:py-4 sm:text-sm md:px-6 md:text-base">
                     {row[1] === "Non inclus" || row[1] === "Opaque" ? "✖ " : ""}
                     {row[1]}
                   </td>
-                  <td className="px-5 py-4 text-base font-semibold text-emerald-400 md:px-6 md:text-xl">
+                  <td className="px-3 py-3 text-xs font-semibold text-emerald-400 sm:px-5 sm:py-4 sm:text-sm md:px-6 md:text-base">
                     {row[2] === "Inclus" || row[2] === "Dashboard temps reel" ? "☑ " : ""}
                     {row[2]}
                   </td>

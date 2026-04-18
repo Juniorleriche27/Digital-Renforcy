@@ -17,7 +17,7 @@ export default function StatsPanel() {
               </span>
             ))}
           </div>
-          <p className="text-base text-slate-300 md:text-2xl">
+          <p className="text-base text-slate-300 md:text-xl">
             <strong className="text-slate-100">+60 clients</strong> nous font confiance
           </p>
         </div>

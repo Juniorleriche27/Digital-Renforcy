@@ -43,10 +43,10 @@ export default function PricingLeadFormSection() {
     <section id="pricing" className="dark-section">
       <div className="container-shell">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl lg:text-6xl">
             Choisissez votre <span className="title-gradient">premier pas</span>
           </h2>
-          <p className="mt-4 text-base text-slate-300 md:text-2xl">
+          <p className="mt-4 text-base text-slate-300 md:text-xl">
             Sélectionnez le service qui correspond à votre besoin. On vous rappelle sous 24h.
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function PricingLeadFormSection() {
                 ✓
               </div>
               <h3 className="mt-4 text-2xl font-semibold text-slate-100 md:text-4xl">Demande envoyée</h3>
-              <p className="mt-2 text-base text-slate-300 md:text-2xl">
+              <p className="mt-2 text-base text-slate-300 md:text-xl">
                 Retour sous <strong>24h</strong> pour cadrer votre projet.
               </p>
             </div>

@@ -7,10 +7,10 @@ export default function SectorsSection() {
       <div className="container-shell">
         <div className="mx-auto max-w-5xl text-center">
           <span className="badge-chip border-cyan-500/30 bg-cyan-500/10 text-cyan-300">🧭 NOS SECTEURS</span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl lg:text-6xl">
             Deux univers, <span className="title-gradient">une même ambition</span>
           </h2>
-          <p className="mt-4 text-base text-slate-300 md:text-2xl">
+          <p className="mt-4 text-base text-slate-300 md:text-xl">
             Que vous soyez une entreprise cherchant à digitaliser ou un entrepreneur souhaitant automatiser sa croissance, Digital Renforcy a une solution.
           </p>
         </div>
@@ -24,7 +24,7 @@ export default function SectorsSection() {
                 </span>
                 {sector.title}
               </h3>
-              <blockquote className="rounded-xl border-l-2 border-[#35b7ff] bg-[#122c4f] px-5 py-4 text-base italic text-slate-300 md:text-2xl">
+              <blockquote className="rounded-xl border-l-2 border-[#35b7ff] bg-[#122c4f] px-5 py-4 text-base italic text-slate-300 md:text-xl">
                 "{sector.quote}"
               </blockquote>
               <ul className="mt-5 space-y-3">

@@ -9,10 +9,10 @@ export default function EcosystemSection() {
             <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
               🧩 ÉCOSYSTÈME DIGITAL
             </span>
-            <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-6xl">
+            <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl lg:text-6xl">
               Toutes les plateformes <span className="title-gradient">connectées pour vous</span>
             </h2>
-            <p className="mt-4 text-base text-slate-300 md:text-2xl">
+            <p className="mt-4 text-base text-slate-300 md:text-xl">
               Nous maîtrisons l'ensemble des outils qui génèrent des leads et automatisent votre acquisition — pour que vous n'ayez rien à apprendre.
             </p>
           </div>

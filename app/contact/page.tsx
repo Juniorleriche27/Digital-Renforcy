@@ -61,7 +61,7 @@ export default function ContactPage() {
                 Votre digital en{" "}
                 <span className="title-gradient">force opérationnelle</span>
               </h1>
-              <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg md:text-2xl">
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg md:text-xl">
                 Consultation gratuite de 30 min — Nos experts analysent votre situation et
                 définissent la stratégie digitale sur mesure pour votre secteur.
               </p>

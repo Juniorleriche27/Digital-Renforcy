@@ -6,10 +6,10 @@ export default function Footer() {
   return (
     <footer className="border-t border-[#1f4069] bg-[#081d3a] pb-10 pt-14">
       <div className="container-shell">
-        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-[1.35fr_0.7fr_0.7fr_1fr]">
+        <div className="grid gap-6 sm:gap-8 md:gap-10 sm:grid-cols-2 md:grid-cols-[1.35fr_0.7fr_0.7fr_1fr]">
           <div>
             <Logo />
-            <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-300 md:text-xl">
+            <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-300">
               Agence Web Hybride — Développement web intelligent et solutions numériques automatisées.
               Nous transformons le digital en force opérationnelle.
               <span className="text-slate-500"> Code APE 6201Z</span>
@@ -28,13 +28,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100 md:text-xl">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">
               Nos activités
             </h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.activities.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-slate-300 hover:text-white md:text-xl">
+                  <Link href={link.href} className="text-sm text-slate-300 hover:text-white">
                     {link.label}
                   </Link>
                 </li>
@@ -43,13 +43,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100 md:text-xl">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">
               Entreprise
             </h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-slate-300 hover:text-white md:text-xl">
+                  <Link href={link.href} className="text-sm text-slate-300 hover:text-white">
                     {link.label}
                   </Link>
                 </li>
@@ -58,8 +58,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100 md:text-xl">Contact</h3>
-            <ul className="mt-4 space-y-3 text-sm text-slate-300 md:text-xl">
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-100">Contact</h3>
+            <ul className="mt-4 space-y-3 text-sm text-slate-300">
               <li>📞 {contact.phone}</li>
               <li>✉️ {contact.email}</li>
               <li className="whitespace-pre-line">📍 {contact.address}</li>

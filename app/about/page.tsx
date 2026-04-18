@@ -138,7 +138,7 @@ export default function AboutPage() {
                       key={item.title}
                       className="rounded-2xl border border-[#2a537f] bg-[#122f53] px-4 py-3"
                     >
-                      <p className="text-base font-bold text-slate-100 md:text-2xl">{item.title}</p>
+                      <p className="text-base font-bold text-slate-100 md:text-xl">{item.title}</p>
                       <p className="mt-1 text-sm text-slate-300 md:text-lg">{item.text}</p>
                     </div>
                   ))}
@@ -158,11 +158,11 @@ export default function AboutPage() {
                 La méthode qui transforme votre digital en{" "}
                 <span className="title-gradient">force opérationnelle</span>
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-xl">
                 Digital Renforcy est née d'un constat : trop d'entreprises dépensent sur des plateformes
                 à commissions, des sites dépassés et des campagnes mal pilotées.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-xl">
                 Notre réponse : la méthode hybride Web × Acquisition. Un site web intelligent (200€/mois)
                 couplé à des campagnes ciblées (dès 1 200€/mois) pour générer des demandes qualifiées.
                 Résultats mesurables dès le premier mois, sans engagement.
@@ -204,7 +204,7 @@ export default function AboutPage() {
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Nous connaissons <span className="title-gradient">votre secteur</span>
               </h2>
-              <p className="mt-4 text-base text-slate-300 md:text-2xl">
+              <p className="mt-4 text-base text-slate-300 md:text-xl">
                 Nous concentrons notre expertise sur des domaines precis pour livrer des resultats
                 concrets.
               </p>
@@ -240,11 +240,11 @@ export default function AboutPage() {
               <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Qu'est-ce qu'un <span className="title-gradient">site web intelligent</span> ?
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-xl">
                 C'est bien plus qu'un site vitrine. C'est un système conçu pour convertir les
                 visiteurs en prospects automatiquement, 24h/24 et 7j/7.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-xl">
                 Pour la rénovation : formulaire devis optimisé, CTA visibles, galerie réalisations,
                 SEO local. Pour la formation : pages programme, tunnel inscription fluide, intégration
                 CPF et contenu SEO.
@@ -309,7 +309,7 @@ export default function AboutPage() {
                   key={item}
                   data-reveal
                   data-delay={`${70 + index * 30}ms`}
-                  className="dark-card rounded-2xl px-5 py-4 text-base font-semibold text-slate-100 md:text-2xl"
+                  className="dark-card rounded-2xl px-5 py-4 text-base font-semibold text-slate-100 md:text-xl"
                 >
                   {item}
                 </div>
@@ -325,7 +325,7 @@ export default function AboutPage() {
               <h2 className="mx-auto mt-5 max-w-5xl text-4xl font-bold tracking-tight text-slate-100 md:text-6xl">
                 Prêt à <span className="title-gradient">digitaliser et automatiser votre acquisition</span> ?
               </h2>
-              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-2xl">
+              <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-slate-300 md:text-xl">
                 Consultation gratuite de 30 minutes. Audit de votre situation, recommandations
                 personnalisées, sans engagement.
               </p>

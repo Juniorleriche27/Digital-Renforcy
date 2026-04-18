@@ -77,7 +77,7 @@ export default function PortfolioShowcase() {
                   {project.title}
                 </h3>
                 <p className="mt-3 text-base text-slate-300 md:text-xl">{project.location}</p>
-                <p className="mt-5 text-lg leading-relaxed text-slate-300 md:text-2xl">
+                <p className="mt-5 text-lg leading-relaxed text-slate-300 md:text-xl">
                   {project.description}
                 </p>
 

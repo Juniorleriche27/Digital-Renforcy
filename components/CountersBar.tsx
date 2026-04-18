@@ -34,7 +34,7 @@ function CounterItem({
 
   return (
     <article className="flex items-center gap-4">
-      <div className="grid h-14 w-14 place-items-center rounded-2xl border border-[#214a78] bg-[#0f2a4f] text-2xl">
+      <div className="grid h-11 w-11 sm:h-14 sm:w-14 place-items-center rounded-2xl border border-[#214a78] bg-[#0f2a4f] text-xl sm:text-2xl">
         {counter.icon === "layers"
           ? "🧱"
           : counter.icon === "briefcase"
@@ -44,11 +44,11 @@ function CounterItem({
           : "📈"}
       </div>
       <div>
-        <div className="text-3xl font-bold text-slate-100 md:text-4xl">
+        <div className="text-2xl font-bold text-slate-100 sm:text-3xl md:text-4xl">
           {isNaN(target) ? counter.value : count}
           <span className="text-[#49a8ff]">{counter.suffix}</span>
         </div>
-        <p className="text-sm text-slate-300 md:text-xl">{counter.label}</p>
+        <p className="text-xs text-slate-300 sm:text-sm">{counter.label}</p>
       </div>
     </article>
   );
@@ -77,7 +77,7 @@ export default function CountersBar() {
   return (
     <section ref={ref} className="border-b border-[#1f4069] pb-8 pt-6">
       <div className="container-shell">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 md:grid-cols-4">
           {counters.map((counter, index) => (
             <CounterItem key={counter.label} counter={counter} index={index} active={active} />
           ))}

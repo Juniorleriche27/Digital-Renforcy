@@ -104,7 +104,7 @@ export default function FloatingAssistant() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label="Ouvrir l'assistant"
-        className="fixed bottom-6 right-6 z-50 grid h-16 w-16 place-items-center rounded-full border border-[#4a79ff]/60 bg-gradient-to-b from-[#3b65ff] to-[#2b4df0] text-white shadow-[0_20px_55px_-22px_rgba(58,104,255,0.95)] transition-all hover:scale-[1.06] hover:shadow-[0_24px_60px_-20px_rgba(58,104,255,0.99)]"
+        className="fixed bottom-4 right-4 z-50 grid h-14 w-14 place-items-center rounded-full border border-[#4a79ff]/60 bg-gradient-to-b from-[#3b65ff] to-[#2b4df0] text-white shadow-[0_20px_55px_-22px_rgba(58,104,255,0.95)] transition-all hover:scale-[1.06] hover:shadow-[0_24px_60px_-20px_rgba(58,104,255,0.99)] sm:bottom-6 sm:right-6 sm:h-16 sm:w-16"
       >
         {open ? (
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -127,8 +127,8 @@ export default function FloatingAssistant() {
       {/* Fenêtre chat */}
       {open && (
         <div
-          className="fixed bottom-28 right-6 z-50 flex flex-col overflow-hidden rounded-3xl border border-[#2a5a8e]/80 bg-[#0b2040] shadow-[0_40px_90px_-30px_rgba(30,80,220,0.85)]"
-          style={{ width: "min(420px, 92vw)", height: "min(600px, 80vh)" }}
+          className="fixed bottom-20 right-3 z-50 flex flex-col overflow-hidden rounded-2xl border border-[#2a5a8e]/80 bg-[#0b2040] shadow-[0_40px_90px_-30px_rgba(30,80,220,0.85)] sm:bottom-28 sm:right-6 sm:rounded-3xl"
+          style={{ width: "min(420px, calc(100vw - 24px))", height: "min(600px, calc(100dvh - 100px))" }}
         >
           {/* Header */}
           <div className="flex shrink-0 items-center gap-3 border-b border-[#1e4a75] bg-gradient-to-r from-[#0f2f5c] to-[#112d58] px-5 py-4">

@@ -40,7 +40,7 @@ export default function ServiceDetailSection({
             {title}
           </h2>
           <p className="mt-5 text-2xl font-semibold text-slate-200 md:text-3xl">{subtitle}</p>
-          <p className="mt-5 text-lg leading-relaxed text-slate-300 md:text-2xl">{description}</p>
+          <p className="mt-5 text-lg leading-relaxed text-slate-300 md:text-xl">{description}</p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {metrics.map((metric, index) => (
@@ -90,7 +90,7 @@ export default function ServiceDetailSection({
             {bullets.map((item, index) => (
               <li
                 key={item}
-                className="services-bullet flex items-start gap-3 text-lg text-slate-200 md:text-2xl"
+                className="services-bullet flex items-start gap-3 text-lg text-slate-200 md:text-xl"
                 style={{ animationDelay: `${index * 0.12}s` }}
               >
                 <span className="mt-1 text-emerald-400">●</span>
