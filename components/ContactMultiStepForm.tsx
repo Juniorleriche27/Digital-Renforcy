@@ -57,7 +57,7 @@ const TIME_SLOTS = Array.from({ length: 19 }, (_, i) => {
 const STEPS = ["Votre projet", "Votre entreprise", "Vos coordonnées", "Confirmation"];
 
 type FormData = {
-  service: string; secteur: string; formule: string;
+  service: string; secteur: string; secteur_autre: string; formule: string;
   company_name: string; company_size: string; situation: string; objectif: string;
   first_name: string; last_name: string; email: string; phone: string;
   website: string; discovery: string; callback_date: string; callback_time: string;
@@ -65,7 +65,7 @@ type FormData = {
 };
 
 const INITIAL: FormData = {
-  service: "", secteur: "", formule: "",
+  service: "", secteur: "", secteur_autre: "", formule: "",
   company_name: "", company_size: "", situation: "", objectif: "",
   first_name: "", last_name: "", email: "", phone: "",
   website: "", discovery: "", callback_date: "", callback_time: "",
@@ -104,7 +104,7 @@ export default function ContactMultiStepForm() {
           last_name: form.last_name,
           email: form.email,
           phone: form.phone,
-          sector: form.secteur || "autre",
+          sector: form.secteur === "Autre" && form.secteur_autre ? form.secteur_autre : (form.secteur || "autre"),
           service: form.service,
           formule: form.formule,
           company_name: form.company_name,
@@ -191,19 +191,27 @@ export default function ContactMultiStepForm() {
         {step === 1 && (
           <div className="space-y-6">
             <div>
-              <label className={lbl}>Service souhaité *</label>
+              <label className={lbl}>
+                Service souhaité <span className="text-rose-400">*</span>
+                {form.service === "" && (
+                  <span className="ml-2 text-xs font-normal text-amber-400">← Cliquez sur une carte pour continuer</span>
+                )}
+              </label>
               <div className="mt-3 grid gap-3 sm:grid-cols-3">
                 {SERVICES.map((s) => (
                   <button
                     key={s.id}
                     type="button"
                     onClick={() => set("service", s.id)}
-                    className={`rounded-xl border p-4 text-left transition-all ${
+                    className={`relative rounded-xl border-2 p-4 text-left transition-all ${
                       form.service === s.id
-                        ? "border-[#3f6bff] bg-[#162d5a] shadow-[0_0_0_2px_rgba(63,107,255,0.35)]"
-                        : "border-[#315a86] bg-[#102848] hover:border-[#4a79ff]/60"
+                        ? "border-[#3f6bff] bg-[#162d5a] shadow-[0_0_0_3px_rgba(63,107,255,0.4)]"
+                        : "border-[#315a86] bg-[#102848] hover:border-[#4a79ff]"
                     }`}
                   >
+                    {form.service === s.id && (
+                      <span className="absolute right-3 top-3 grid h-5 w-5 place-items-center rounded-full bg-[#3f6bff] text-[10px] text-white">✓</span>
+                    )}
                     <div className="text-2xl">{s.icon}</div>
                     <p className="mt-2 text-sm font-bold text-slate-100">{s.label}</p>
                     <p className="mt-1 text-xs leading-relaxed text-slate-400">{s.desc}</p>
@@ -218,6 +226,15 @@ export default function ContactMultiStepForm() {
                 <option value="">— Choisir votre secteur —</option>
                 {SECTORS.map((s) => <option key={s} value={s}>{s}</option>)}
               </select>
+              {form.secteur === "Autre" && (
+                <input
+                  type="text"
+                  placeholder="Précisez votre secteur d'activité..."
+                  value={form.secteur_autre}
+                  onChange={(e) => set("secteur_autre", e.target.value)}
+                  className={inp}
+                />
+              )}
             </div>
 
             <div>
@@ -356,7 +373,11 @@ export default function ContactMultiStepForm() {
                   {SERVICES.find((s) => s.id === form.service)?.label}
                 </p>
               )}
-              {form.secteur && <p>🏢 <strong className="text-slate-200">Secteur :</strong> {form.secteur}</p>}
+              {form.secteur && (
+                <p>🏢 <strong className="text-slate-200">Secteur :</strong>{" "}
+                  {form.secteur === "Autre" && form.secteur_autre ? form.secteur_autre : form.secteur}
+                </p>
+              )}
               {form.formule && <p>💼 <strong className="text-slate-200">Formule :</strong> {form.formule}</p>}
               {form.company_name && (
                 <p>🏭 <strong className="text-slate-200">Entreprise :</strong> {form.company_name}
