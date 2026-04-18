@@ -274,9 +274,7 @@ button {
 }
 
 .hero-source-bar {
-  width: var(--target-width);
-  transform-origin: left center;
-  transform: scaleX(0);
+  width: 0%;
   animation:
     source-bar-grow 1s cubic-bezier(0.22, 1, 0.36, 1) var(--bar-delay, 0.45s) forwards,
     bar-oscillate 2.2s ease-in-out var(--bar-osc-delay, 1.6s) infinite;
@@ -285,12 +283,12 @@ button {
 @keyframes bar-oscillate {
   0%,
   100% {
-    transform: scaleX(1);
+    width: var(--target-width);
     opacity: 1;
   }
   50% {
-    transform: scaleX(0.65);
-    opacity: 0.75;
+    width: calc(var(--target-width) * 0.55);
+    opacity: 0.7;
   }
 }
 
@@ -647,11 +645,11 @@ button {
 
 @keyframes source-bar-grow {
   from {
-    transform: scaleX(0);
+    width: 0%;
     opacity: 0.5;
   }
   to {
-    transform: scaleX(1);
+    width: var(--target-width);
     opacity: 1;
   }
 }
