@@ -5,6 +5,7 @@ export const nav = [
   { label: "A Propos", href: "/about" },
   { label: "Tarifs", href: "/pricing" },
   { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const contact = {
@@ -12,7 +13,7 @@ export const contact = {
   phoneHref: "tel:+33635320440",
   whatsapp: "https://wa.me/33635320440",
   calendly: "https://calendly.com/ibrahim-b-digitalrenforcy/30-minutes-de-discussion",
-  contactForm: "/pricing",
+  contactForm: "/contact",
   address: "78 Av. des Champs-Elysees\nBureau 326, 75008 Paris",
   email: "hello@digitalrenforcy.com",
 };
