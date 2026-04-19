@@ -1,0 +1,20 @@
+name: Keep Backend Alive
+
+on:
+  schedule:
+    - cron: "*/8 * * * *"    # toutes les 8 min — Render dort après 10 min d'inactivité
+  workflow_dispatch:           # déclenchement manuel possible
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping backend health
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://digital-renforcy-backend.onrender.com/api/health)
+          echo "HTTP status: $STATUS"
+          if [ "$STATUS" != "200" ]; then
+            echo "Backend returned $STATUS — may be cold-starting"
+          else
+            echo "Backend is awake and healthy"
+          fi
