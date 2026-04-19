@@ -10,7 +10,10 @@ export async function POST(request: Request) {
   }
 
   try {
-    const backendUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+    const backendUrl =
+      process.env.BACKEND_API_URL ??
+      process.env.NEXT_PUBLIC_API_URL ??
+      "http://localhost:8000";
     const res = await fetch(`${backendUrl}/api/contact`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

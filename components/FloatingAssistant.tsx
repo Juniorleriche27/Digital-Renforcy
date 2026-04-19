@@ -3,8 +3,6 @@
 import { useState, useRef, useEffect } from "react";
 import { contact } from "@/lib/data";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
-
 type Message = { role: "user" | "bot"; text: string; id: number; done: boolean };
 
 // Supprime le markdown brut (#, **, ***, etc.) pour un rendu propre
@@ -79,13 +77,23 @@ export default function FloatingAssistant() {
     setMessages((prev) => [...prev, { role: "user", text, id: Date.now(), done: true }]);
     setLoading(true);
     try {
-      const res = await fetch(`${API_URL}/api/chat`, {
+      const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text, session_id: sessionId }),
       });
-      const data = (await res.json()) as { reply: string; session_id: string };
-      setSessionId(data.session_id);
+
+      const data = (await res.json()) as {
+        reply?: string;
+        session_id?: string | null;
+        error?: string;
+      };
+
+      if (!res.ok || typeof data.reply !== "string") {
+        throw new Error(data.error ?? "Invalid chat response.");
+      }
+
+      setSessionId(data.session_id ?? null);
       await typeMessage(data.reply);
     } catch {
       await typeMessage("Une erreur est survenue. Contactez-nous directement sur WhatsApp ou réservez un appel gratuit.");
