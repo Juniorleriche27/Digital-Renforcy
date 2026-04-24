@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
+import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
 import SiteEffects from "@/components/SiteEffects";
+
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+  weight: ["400", "600", "700", "800"],
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Digital Renforcy - Agence Web Hybride",
@@ -19,7 +33,7 @@ export default function RootLayout({
   children: import("react").ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={`${syne.variable} ${dmSans.variable}`}>
       <body className="font-sans antialiased">
         <div className="site-ambient" aria-hidden>
           <span className="nebula nebula-a" />

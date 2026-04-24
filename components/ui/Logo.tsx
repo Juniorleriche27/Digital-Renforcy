@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -7,26 +7,42 @@ export default function Logo({ className = "" }: { className?: string }) {
   const [hasError, setHasError] = useState(false);
 
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
-      <div className="relative h-11 w-11 overflow-hidden rounded-sm border border-[#2d5f94] bg-[#0f2f5f]">
+    <div className={`flex items-center gap-2 ${className}`}>
+      <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl">
         {hasError ? (
-          <div className="grid h-full w-full place-items-center bg-gradient-to-br from-brand-600 to-cyan-500 text-sm font-bold text-white">
+          <div
+            className="grid h-full w-full place-items-center text-sm font-bold text-white font-display"
+            style={{ background: "linear-gradient(140deg, #1e48ff, #00a8d8)" }}
+          >
             DR
           </div>
         ) : (
           <Image
-            src="/logo-dr.svg"
+            src="/logo-dr.png"
             alt="Logo Digital Renforcy"
             fill
-            sizes="44px"
-            className="object-cover"
+            sizes="48px"
+            className="object-contain"
             onError={() => setHasError(true)}
             priority
           />
         )}
       </div>
-      <span className="text-2xl font-bold tracking-tight text-slate-100 md:text-[2rem]">
-        Digital Renforcy
+      <span
+        className="font-display text-xl font-bold tracking-[-0.02em] text-slate-100 md:text-[1.4rem]"
+        style={{ letterSpacing: "-0.02em" }}
+      >
+        Digital{" "}
+        <span
+          style={{
+            background: "linear-gradient(90deg, #4572ff, #00d4ff)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
+        >
+          Renforcy
+        </span>
       </span>
     </div>
   );

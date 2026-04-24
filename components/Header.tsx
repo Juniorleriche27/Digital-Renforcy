@@ -1,93 +1,109 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { contact, nav } from "@/lib/data";
 import Logo from "./ui/Logo";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
   const pathname = usePathname();
 
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 28);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? Math.min((window.scrollY / max) * 100, 100) : 0);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const isActive = (href: string) => {
-    if (href === "/about" && pathname === "/a-propos") {
-      return true;
-    }
-    if (href === "/pricing" && pathname === "/tarifs") {
-      return true;
-    }
-    if (href === "/") {
-      return pathname === "/";
-    }
+    if (href === "/about" && pathname === "/a-propos") return true;
+    if (href === "/pricing" && pathname === "/tarifs") return true;
+    if (href === "/") return pathname === "/";
     return pathname === href;
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#1d3f68] bg-[#071831]/95 backdrop-blur-md">
+    <header
+      className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+        scrolled
+          ? "border-[#1a3560]/80 bg-[#050c18]/97 shadow-[0_4px_30px_rgba(0,0,0,0.4)] backdrop-blur-xl"
+          : "border-[#162d50]/60 bg-[#060e1c]/90 backdrop-blur-md"
+      }`}
+    >
+      {/* Scroll progress line */}
+      <div
+        className="absolute bottom-0 left-0 h-[1.5px] transition-[width] duration-100"
+        style={{
+          width: `${progress}%`,
+          background: "linear-gradient(90deg, #4572ff, #00d4ff, #ffc84a)",
+          boxShadow: "0 0 8px rgba(69,114,255,0.6)",
+        }}
+      />
+
       <div className="container-shell flex h-[76px] items-center justify-between">
         <Link href="/" aria-label="Digital Renforcy - Accueil">
           <Logo />
         </Link>
 
-        <nav className="hidden items-center gap-1 rounded-xl border border-[#1e3f69] bg-[#0c2144]/80 p-1 lg:flex">
+        {/* Desktop nav pill */}
+        <nav
+          className="hidden items-center gap-0.5 rounded-2xl border border-[#1a3560]/70 bg-[#080f20]/80 p-1.5 backdrop-blur-lg lg:flex"
+          style={{ boxShadow: "0 0 0 1px rgba(69,114,255,0.06) inset" }}
+        >
           {nav.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className={`rounded-lg px-4 py-3 text-sm font-semibold ${
+              className={`relative rounded-xl px-4 py-2.5 text-[13px] font-semibold tracking-wide transition-all duration-200 font-display ${
                 isActive(item.href)
-                  ? "bg-[#17345f] text-[#72a8ff]"
-                  : "text-slate-300 hover:bg-[#122a4c] hover:text-slate-100"
+                  ? "bg-[#1a3870] text-[#80b4ff] shadow-[0_2px_12px_rgba(69,114,255,0.28)]"
+                  : "text-[#8aa5c8] hover:bg-[#0f2040] hover:text-[#c8deff]"
               }`}
             >
+              {isActive(item.href) && (
+                <span className="absolute bottom-1 left-1/2 h-[2px] w-3 -translate-x-1/2 rounded-full bg-[#4572ff] opacity-80" />
+              )}
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
-          <button className="grid h-11 w-11 place-items-center rounded-xl border border-[#244a79] bg-[#122946] text-slate-300">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"
-                stroke="currentColor"
-                strokeWidth="1.8"
-              />
-              <path
-                d="M19.4 15a1 1 0 0 0 .2 1.1l.1.1a1.2 1.2 0 0 1-.8 2.1h-.1a1 1 0 0 0-1 .7l-.1.2a1.2 1.2 0 0 1-2.3-.1 1 1 0 0 0-.9-.7h-.2a1.2 1.2 0 0 1-1.1-.8 1 1 0 0 0-1-.6H12a1 1 0 0 0-1 .6 1.2 1.2 0 0 1-1.1.8h-.2a1 1 0 0 0-.9.7 1.2 1.2 0 0 1-2.3.1l-.1-.2a1 1 0 0 0-1-.7h-.1a1.2 1.2 0 0 1-.8-2.1l.1-.1a1 1 0 0 0 .2-1.1 1.2 1.2 0 0 1 .4-1.4 1 1 0 0 0 .4-1.1v-.2a1.2 1.2 0 0 1 1.2-1.2h.2a1 1 0 0 0 1-.6l.1-.2a1.2 1.2 0 0 1 2.2-.2 1 1 0 0 0 1 .6H12a1 1 0 0 0 1-.6 1.2 1.2 0 0 1 2.2.2l.1.2a1 1 0 0 0 1 .6h.2a1.2 1.2 0 0 1 1.2 1.2v.2a1 1 0 0 0 .4 1.1c.5.3.7 1 .4 1.5Z"
-                stroke="currentColor"
-                strokeWidth="1.3"
-              />
-            </svg>
-          </button>
-
+        {/* Desktop actions */}
+        <div className="hidden items-center gap-2.5 md:flex">
           <a
             href={contact.phoneHref}
-            className="inline-flex items-center gap-2 rounded-full border border-[#224b7a] bg-[#102645] px-7 py-3 text-sm font-semibold text-slate-100 hover:bg-[#17345f]"
+            className="inline-flex items-center gap-2 rounded-full border border-[#203a65]/70 bg-[#0c1e40]/60 px-5 py-2.5 text-[13px] font-semibold text-[#a8c4e8] backdrop-blur-md transition-all hover:border-[#304f80] hover:bg-[#142852] hover:text-white font-display"
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M6.6 10.8a15.7 15.7 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.2 11.2 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4.5a1 1 0 0 1 1-1h3.2a1 1 0 0 1 1 1 11.2 11.2 0 0 0 .56 3.5 1 1 0 0 1-.25 1l-2 1.8Z"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+              <path d="M6.6 10.8a15.7 15.7 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.2 11.2 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4.5a1 1 0 0 1 1-1h3.2a1 1 0 0 1 1 1 11.2 11.2 0 0 0 .56 3.5 1 1 0 0 1-.25 1l-2 1.8Z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             Appeler
           </a>
-          <Link href={contact.contactForm} className="btn-primary px-8 py-3">
+          <Link
+            href={contact.contactForm}
+            className="btn-primary px-6 py-2.5 text-[13px]"
+          >
             Démarrer
+            <svg width="13" height="13" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </Link>
         </div>
 
+        {/* Mobile menu toggle */}
         <button
           aria-label="Menu"
-          onClick={() => setOpen((value) => !value)}
-          className="rounded-lg border border-[#224b7a] p-2 text-slate-200 lg:hidden"
+          onClick={() => setOpen((v) => !v)}
+          className="rounded-xl border border-[#203a65]/70 bg-[#0c1e40]/60 p-2.5 text-[#8aa5c8] backdrop-blur-md lg:hidden"
         >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path
               d={open ? "M6 6l12 12M6 18L18 6" : "M4 7h16M4 12h16M4 17h16"}
               stroke="currentColor"
@@ -98,33 +114,38 @@ export default function Header() {
         </button>
       </div>
 
-      {open ? (
-        <div className="border-t border-[#1d3f68] bg-[#081b37] lg:hidden">
+      {/* Mobile drawer */}
+      {open && (
+        <div className="border-t border-[#162d50]/60 bg-[#060e1c]/98 backdrop-blur-xl lg:hidden">
           <div className="container-shell space-y-1 py-4">
             {nav.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className={`block rounded-lg px-3 py-3 text-sm font-semibold ${
+                className={`flex items-center rounded-xl px-4 py-3 text-sm font-semibold font-display transition-colors ${
                   isActive(item.href)
-                    ? "bg-[#17345f] text-[#72a8ff]"
-                    : "text-slate-200 hover:bg-[#17345f]"
+                    ? "bg-[#1a3870] text-[#80b4ff]"
+                    : "text-[#8aa5c8] hover:bg-[#0f2040] hover:text-[#c8deff]"
                 }`}
                 onClick={() => setOpen(false)}
               >
+                {isActive(item.href) && (
+                  <span className="mr-2.5 h-1.5 w-1.5 rounded-full bg-[#4572ff]" />
+                )}
                 {item.label}
               </Link>
             ))}
             <div className="grid grid-cols-2 gap-2 pt-3">
               <a
                 href={contact.phoneHref}
-                className="rounded-lg border border-[#224b7a] px-4 py-2 text-center text-sm font-semibold text-slate-100"
+                className="rounded-xl border border-[#203a65]/70 px-4 py-2.5 text-center text-sm font-semibold text-[#a8c4e8] font-display"
               >
                 Appeler
               </a>
               <Link
                 href={contact.contactForm}
-                className="rounded-lg bg-[#315cff] px-4 py-2 text-center text-sm font-semibold text-white"
+                className="rounded-xl bg-gradient-to-r from-[#1e48ff] to-[#3a68ff] px-4 py-2.5 text-center text-sm font-semibold text-white font-display"
+                style={{ boxShadow: "0 8px 24px -8px rgba(30,72,255,0.7)" }}
                 onClick={() => setOpen(false)}
               >
                 Démarrer
@@ -132,7 +153,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-      ) : null}
+      )}
     </header>
   );
 }
