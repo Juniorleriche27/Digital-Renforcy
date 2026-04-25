@@ -18,23 +18,24 @@ export default function TestimonialsSection() {
       <div className="container-shell">
         <div className="mx-auto max-w-5xl text-center">
           <span className="badge-chip border-orange-500/30 bg-orange-500/10 text-orange-400">
-            ⭐ TÉMOIGNAGES
+            TEMOIGNAGES
           </span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl md:text-5xl lg:text-6xl">
             Ce que disent nos clients
             <br />
-            <span className="title-gradient">rénovation &amp; formation</span>
+            <span className="title-gradient">renovation &amp; formation</span>
           </h2>
           <p className="mt-4 text-base text-slate-300 md:text-xl">
-            Des résultats concrets, mesurables, par des entreprises comme la vôtre.
+            Des resultats concrets, mesurables, par des entreprises comme la votre.
           </p>
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial, index) => (
             <article
               key={testimonial.author}
-              className={`dark-card rounded-3xl border p-6 ${borderByColor[testimonial.color]}`}
+              className={`dark-card testimonial-card rounded-3xl border p-6 ${borderByColor[testimonial.color]}`}
+              style={{ "--testimonial-delay": `${index * 110}ms` } as React.CSSProperties}
             >
               <div className="mb-4 flex items-center justify-between">
                 <div className="text-yellow-400">★★★★★</div>

@@ -21,12 +21,12 @@ const TOOLS_DOUBLE = [...TOOLS, ...TOOLS];
 
 export default function TechMarquee() {
   return (
-    <div className="border-y border-[#1f4069] bg-[#081a35]/60 py-4 overflow-hidden">
-      <div className="tech-marquee-track flex gap-4" aria-hidden>
+    <div className="overflow-hidden border-y border-[#1f4069] bg-[#081a35]/60 py-3 sm:py-4">
+      <div className="tech-marquee-track flex gap-3 sm:gap-4" aria-hidden>
         {TOOLS_DOUBLE.map((tool, i) => (
           <span
             key={i}
-            className="flex shrink-0 items-center gap-2 rounded-full border border-[#264f7b] bg-[#0d2748] px-4 py-2 text-sm font-semibold text-slate-300 whitespace-nowrap"
+            className="flex shrink-0 whitespace-nowrap items-center gap-2 rounded-full border border-[#264f7b] bg-[#0d2748] px-3 py-1.5 text-xs font-semibold text-slate-300 sm:px-4 sm:py-2 sm:text-sm"
           >
             <span>{tool.emoji}</span>
             {tool.name}

@@ -7,6 +7,7 @@ import {
   heroTags,
 } from "@/lib/data";
 import HeroSourceBars from "@/components/HeroSourceBars";
+import BadgeTypewriter from "@/components/BadgeTypewriter";
 
 export default function Hero() {
   return (
@@ -14,24 +15,24 @@ export default function Hero() {
       <div className="container-shell grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
           {/* Badge */}
-          <span className="badge-chip hero-badge-anim">
-            <span className="relative flex h-2 w-2">
+          <span className="badge-chip">
+            <span className="relative flex h-2 w-2 shrink-0">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
               <span className="relative h-2 w-2 rounded-full bg-emerald-400" />
             </span>
-            Agence Marketing Hybride · France
+            <BadgeTypewriter />
           </span>
 
           {/* Heading — Syne font for max visual impact */}
           <h1 className="mt-7 max-w-3xl font-display text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-slate-100 sm:text-5xl md:text-6xl lg:text-[4.25rem]">
             <span className="hero-line" style={{ "--line-delay": "0.35s" } as React.CSSProperties}>
-              Technique,
+              Innovation Digital
             </span>
             <span className="hero-line mt-0.5" style={{ "--line-delay": "0.52s" } as React.CSSProperties}>
-              automatisation &amp;
+              &amp; systèmes
             </span>
             <span className="hero-line mt-0.5" style={{ "--line-delay": "0.68s" } as React.CSSProperties}>
-              <span className="title-gradient">innovation digitale</span>
+              <span className="title-gradient">d&apos;acquisition clients</span>
             </span>
           </h1>
 
@@ -39,9 +40,8 @@ export default function Hero() {
             className="hero-fade-up mt-6 max-w-xl text-base leading-relaxed text-[#8aa5c8] sm:text-lg"
             style={{ "--fade-delay": "0.95s" } as React.CSSProperties}
           >
-            Digital Renforcy combine <strong className="font-semibold text-slate-200">expertise technique</strong> et innovation numérique :
-            développement web intelligent, solutions automatisées et stratégie digitale
-            —{" "}<em className="not-italic text-slate-300">une approche hybride et performante.</em>
+            Agence web hybride basée en France — nous combinons <strong className="font-semibold text-slate-200">développement web intelligent</strong> et systèmes d&apos;acquisition de clients automatisés
+            pour propulser votre croissance.{" "}<em className="not-italic text-slate-300">Performance mesurable, résultats concrets.</em>
           </p>
 
           {/* CTAs */}
@@ -100,7 +100,7 @@ function DashboardCard() {
 
   return (
     <article
-      className="dark-card rounded-[28px]"
+      className="dark-card hero-float rounded-[28px]"
       style={{ boxShadow: "0 0 0 1px rgba(30,60,110,0.32) inset, 0 28px 60px -28px rgba(2,6,24,1), 0 0 80px -40px rgba(40,80,200,0.18)" }}
     >
       {/* Window chrome */}

@@ -370,8 +370,9 @@ export const footerLinks = {
   ],
   legal: [
     { label: "Mentions Légales", href: "/legal" },
-    { label: "CGU", href: "/cgu" },
+    { label: "CGV", href: "/cgu" },
     { label: "Confidentialité", href: "/privacy" },
+    { label: "Remboursement", href: "/remboursement" },
     { label: "Plan du site", href: "/#top" },
   ],
 };

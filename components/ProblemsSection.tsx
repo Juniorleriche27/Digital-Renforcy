@@ -18,12 +18,17 @@ export default function ProblemsSection() {
           {problems.map((problem, index) => (
             <article
               key={problem.title}
-              className={`dark-card rounded-2xl border-l-[3px] p-7 ${
+              className={`dark-card problem-card rounded-2xl border-l-[3px] p-7 ${
                 index === 0 ? "border-l-[#3465ff]" : "border-l-[#ff7d3c]"
               }`}
+              style={
+                {
+                  "--card-enter-x": index % 2 === 0 ? "-18px" : "18px",
+                } as React.CSSProperties
+              }
             >
               <h3 className="mb-5 flex items-center gap-3 text-2xl font-bold text-slate-100 md:text-3xl">
-                <span className="grid h-10 w-10 place-items-center rounded-xl border border-[#24537f] bg-[#123159]">
+                <span className="problem-card-icon grid h-10 w-10 place-items-center rounded-xl border border-[#24537f] bg-[#123159]">
                   {problem.icon === "globe" ? "🌐" : "⚙️"}
                 </span>
                 {problem.title}
@@ -54,4 +59,3 @@ export default function ProblemsSection() {
     </section>
   );
 }
-

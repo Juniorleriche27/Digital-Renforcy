@@ -38,40 +38,40 @@ export default function HomePage() {
         <div data-reveal data-delay="40ms">
           <ProblemsSection />
         </div>
-        <div data-reveal data-delay="60ms">
+        <div data-reveal data-delay="40ms">
           <SolutionsSection />
         </div>
-        <div data-reveal data-delay="80ms">
+        <div data-reveal data-delay="40ms">
           <EcosystemSection />
         </div>
-        <div data-reveal data-delay="100ms">
+        <div data-reveal data-delay="40ms">
           <CombinedOfferBanner />
         </div>
         <div data-reveal data-delay="40ms">
           <SectorsSection />
         </div>
-        <div data-reveal data-delay="60ms">
+        <div data-reveal data-delay="40ms">
           <WebDevSection />
         </div>
-        <div data-reveal data-delay="80ms">
+        <div data-reveal data-delay="40ms">
           <ProofSection />
         </div>
-        <div data-reveal data-delay="100ms">
+        <div data-reveal data-delay="40ms">
           <ComparisonSection />
         </div>
         <div data-reveal data-delay="40ms">
           <ProcessSection />
         </div>
-        <div data-reveal data-delay="60ms">
+        <div data-reveal data-delay="40ms">
           <MethodSection />
         </div>
-        <div data-reveal data-delay="80ms">
+        <div data-reveal data-delay="40ms">
           <TestimonialsSection />
         </div>
-        <div data-reveal data-delay="100ms">
+        <div data-reveal data-delay="40ms">
           <PricingLeadFormSection />
         </div>
-        <div data-reveal data-delay="120ms">
+        <div data-reveal data-delay="40ms">
           <AuditCTASection />
         </div>
       </main>

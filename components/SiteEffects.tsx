@@ -10,14 +10,29 @@ export default function SiteEffects() {
 
   // Scroll reveal + card stagger
   useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const targets = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]"));
-    if (!targets.length) return;
+    document.body.classList.add("motion-ready");
+
+    if (!targets.length) {
+      return () => {
+        document.body.classList.remove("motion-ready");
+      };
+    }
 
     targets.forEach((target) => {
       Array.from(target.querySelectorAll<HTMLElement>("article, .dark-card")).forEach((card) =>
         card.classList.add("card-anim")
       );
     });
+
+    if (reduceMotion) {
+      targets.forEach((target) => target.classList.add("is-visible"));
+      Array.from(document.querySelectorAll<HTMLElement>(".card-anim")).forEach((card) =>
+        card.classList.add("anim-go")
+      );
+      return;
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -36,21 +51,18 @@ export default function SiteEffects() {
     );
 
     targets.forEach((t) => observer.observe(t));
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      document.body.classList.remove("motion-ready");
+    };
   }, [pathname]);
 
-  // Float bob on cards
-  useEffect(() => {
-    const els = Array.from(document.querySelectorAll<HTMLElement>(".dark-card, article"));
-    els.forEach((el, i) => {
-      el.classList.add("float-el");
-      el.style.setProperty("--float-delay", `-${(i % 5) * 0.85}s`);
-      el.style.setProperty("--float-dur", `${3.8 + (i % 4) * 0.55}s`);
-    });
-  }, [pathname]);
 
   // Card spotlight — cursor glow follows inside card
   useEffect(() => {
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     const cards = Array.from(document.querySelectorAll<HTMLElement>(".dark-card"));
 
     const onMove = (e: MouseEvent) => {
@@ -80,6 +92,7 @@ export default function SiteEffects() {
   // Magnetic buttons — subtle pull toward cursor
   useEffect(() => {
     if (!window.matchMedia("(pointer: fine)").matches) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const btns = Array.from(
       document.querySelectorAll<HTMLElement>(".btn-primary, .btn-outline, .btn-gold")
@@ -119,6 +132,7 @@ export default function SiteEffects() {
   // Custom cursor — smooth ring + dot
   useEffect(() => {
     if (!window.matchMedia("(pointer: fine)").matches) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     document.body.classList.add("cursor-enhanced");
 
