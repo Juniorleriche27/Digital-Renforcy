@@ -549,6 +549,10 @@ body.motion-ready .card-anim.anim-go { opacity: 1; transform: translateY(0); }
     display: none;
   }
 
+  .site-ambient {
+    display: none;
+  }
+
   .site-ambient::before,
   .site-ambient::after,
   .nebula,

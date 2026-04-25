@@ -33,8 +33,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? "border-[#1a3560]/80 bg-[#050c18]/97 shadow-[0_4px_30px_rgba(0,0,0,0.4)] backdrop-blur-xl"
-          : "border-[#162d50]/60 bg-[#060e1c]/90 backdrop-blur-md"
+          ? "border-[#1a3560]/80 bg-[#050c18]/97 shadow-[0_4px_30px_rgba(0,0,0,0.4)] lg:backdrop-blur-xl"
+          : "border-[#162d50]/60 bg-[#060e1c]/95 lg:backdrop-blur-md"
       }`}
     >
       {/* Scroll progress line */}
@@ -101,7 +101,7 @@ export default function Header() {
         <button
           aria-label="Menu"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-xl border border-[#203a65]/70 bg-[#0c1e40]/60 p-2.5 text-[#8aa5c8] backdrop-blur-md lg:hidden"
+          className="rounded-xl border border-[#203a65]/70 bg-[#0c1e40]/90 p-2.5 text-[#8aa5c8] lg:hidden"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path
@@ -116,7 +116,7 @@ export default function Header() {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="border-t border-[#162d50]/60 bg-[#060e1c]/98 backdrop-blur-xl lg:hidden">
+        <div className="border-t border-[#162d50]/60 bg-[#060e1c]/98 lg:hidden">
           <div className="container-shell space-y-1 py-4">
             {nav.map((item) => (
               <Link
