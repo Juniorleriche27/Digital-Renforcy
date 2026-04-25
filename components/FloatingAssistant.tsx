@@ -112,7 +112,7 @@ export default function FloatingAssistant() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label="Ouvrir l'assistant"
-        className="fixed bottom-4 right-4 z-50 grid h-14 w-14 place-items-center rounded-full border border-[#4a79ff]/60 bg-gradient-to-b from-[#3b65ff] to-[#2b4df0] text-white shadow-[0_20px_55px_-22px_rgba(58,104,255,0.95)] transition-all hover:scale-[1.06] hover:shadow-[0_24px_60px_-20px_rgba(58,104,255,0.99)] sm:bottom-6 sm:right-6 sm:h-16 sm:w-16"
+        className="fixed bottom-3 right-3 z-50 grid h-12 w-12 place-items-center rounded-full border border-[#4a79ff]/60 bg-gradient-to-b from-[#3b65ff] to-[#2b4df0] text-white shadow-[0_20px_55px_-22px_rgba(58,104,255,0.95)] transition-all hover:scale-[1.06] hover:shadow-[0_24px_60px_-20px_rgba(58,104,255,0.99)] sm:bottom-6 sm:right-6 sm:h-16 sm:w-16"
       >
         {open ? (
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
