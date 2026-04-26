@@ -33,8 +33,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? "border-[#1a3560]/80 bg-[#050c18]/97 shadow-[0_4px_30px_rgba(0,0,0,0.4)] lg:backdrop-blur-xl"
-          : "border-[#162d50]/60 bg-[#060e1c]/95 lg:backdrop-blur-md"
+          ? "border-[#d9e5f5] bg-white shadow-[0_8px_28px_rgba(15,23,42,0.08)]"
+          : "border-[#e5eef8] bg-white"
       }`}
     >
       {/* Scroll progress line */}
@@ -49,13 +49,13 @@ export default function Header() {
 
       <div className="container-shell flex h-[76px] items-center justify-between">
         <Link href="/" aria-label="Digital Renforcy - Accueil">
-          <Logo />
+          <Logo dark />
         </Link>
 
         {/* Desktop nav pill */}
         <nav
-          className="hidden items-center gap-0.5 rounded-2xl border border-[#1a3560]/70 bg-[#080f20]/80 p-1.5 backdrop-blur-lg lg:flex"
-          style={{ boxShadow: "0 0 0 1px rgba(69,114,255,0.06) inset" }}
+          className="hidden items-center gap-0.5 rounded-2xl border border-[#d9e5f5] bg-[#f7fbff] p-1.5 lg:flex"
+          style={{ boxShadow: "0 0 0 1px rgba(69,114,255,0.04) inset" }}
         >
           {nav.map((item) => (
             <Link
@@ -63,8 +63,8 @@ export default function Header() {
               href={item.href}
               className={`relative rounded-xl px-4 py-2.5 text-[13px] font-semibold tracking-wide transition-all duration-200 font-display ${
                 isActive(item.href)
-                  ? "bg-[#1a3870] text-[#80b4ff] shadow-[0_2px_12px_rgba(69,114,255,0.28)]"
-                  : "text-[#8aa5c8] hover:bg-[#0f2040] hover:text-[#c8deff]"
+                  ? "bg-[#e8f0ff] text-[#2457d8] shadow-[0_2px_12px_rgba(69,114,255,0.16)]"
+                  : "text-[#49627f] hover:bg-[#eef5ff] hover:text-[#173b7a]"
               }`}
             >
               {isActive(item.href) && (
@@ -79,7 +79,7 @@ export default function Header() {
         <div className="hidden items-center gap-2.5 md:flex">
           <a
             href={contact.phoneHref}
-            className="inline-flex items-center gap-2 rounded-full border border-[#203a65]/70 bg-[#0c1e40]/60 px-5 py-2.5 text-[13px] font-semibold text-[#a8c4e8] backdrop-blur-md transition-all hover:border-[#304f80] hover:bg-[#142852] hover:text-white font-display"
+            className="inline-flex items-center gap-2 rounded-full border border-[#d6e3f4] bg-white px-5 py-2.5 text-[13px] font-semibold text-[#28476d] transition-all hover:border-[#bcd2ef] hover:bg-[#f5f9ff] hover:text-[#173b7a] font-display"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
               <path d="M6.6 10.8a15.7 15.7 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.2 11.2 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4.5a1 1 0 0 1 1-1h3.2a1 1 0 0 1 1 1 11.2 11.2 0 0 0 .56 3.5 1 1 0 0 1-.25 1l-2 1.8Z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -101,7 +101,7 @@ export default function Header() {
         <button
           aria-label="Menu"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-xl border border-[#203a65]/70 bg-[#0c1e40]/90 p-2.5 text-[#8aa5c8] lg:hidden"
+          className="rounded-xl border border-[#d6e3f4] bg-white p-2.5 text-[#355372] lg:hidden"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path
@@ -116,7 +116,7 @@ export default function Header() {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="border-t border-[#162d50]/60 bg-[#060e1c]/98 lg:hidden">
+        <div className="border-t border-[#e5eef8] bg-white lg:hidden">
           <div className="container-shell space-y-1 py-4">
             {nav.map((item) => (
               <Link
@@ -124,8 +124,8 @@ export default function Header() {
                 href={item.href}
                 className={`flex items-center rounded-xl px-4 py-3 text-sm font-semibold font-display transition-colors ${
                   isActive(item.href)
-                    ? "bg-[#1a3870] text-[#80b4ff]"
-                    : "text-[#8aa5c8] hover:bg-[#0f2040] hover:text-[#c8deff]"
+                    ? "bg-[#e8f0ff] text-[#2457d8]"
+                    : "text-[#49627f] hover:bg-[#eef5ff] hover:text-[#173b7a]"
                 }`}
                 onClick={() => setOpen(false)}
               >
@@ -138,7 +138,7 @@ export default function Header() {
             <div className="grid grid-cols-2 gap-2 pt-3">
               <a
                 href={contact.phoneHref}
-                className="rounded-xl border border-[#203a65]/70 px-4 py-2.5 text-center text-sm font-semibold text-[#a8c4e8] font-display"
+                className="rounded-xl border border-[#d6e3f4] px-4 py-2.5 text-center text-sm font-semibold text-[#28476d] font-display"
               >
                 Appeler
               </a>

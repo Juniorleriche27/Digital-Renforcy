@@ -1,9 +1,14 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useState } from "react";
 
-export default function Logo({ className = "" }: { className?: string }) {
+type LogoProps = {
+  className?: string;
+  dark?: boolean;
+};
+
+export default function Logo({ className = "", dark = false }: LogoProps) {
   const [hasError, setHasError] = useState(false);
 
   return (
@@ -29,7 +34,9 @@ export default function Logo({ className = "" }: { className?: string }) {
         )}
       </div>
       <span
-        className="font-display text-xl font-bold tracking-[-0.02em] text-slate-100 md:text-[1.4rem]"
+        className={`font-display text-xl font-bold tracking-[-0.02em] md:text-[1.4rem] ${
+          dark ? "text-slate-900" : "text-slate-100"
+        }`}
         style={{ letterSpacing: "-0.02em" }}
       >
         Digital{" "}
