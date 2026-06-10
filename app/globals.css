@@ -72,10 +72,19 @@ a, button { transition: all 0.25s ease; }
 
 .container-shell { @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8; }
 .dark-section { @apply relative py-16 md:py-24; }
+.hero-section {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
 
 @media (max-width: 640px) {
   .dark-section {
     padding-bottom: 5.5rem;
+  }
+
+  .hero-section {
+    padding-top: 1.125rem;
+    padding-bottom: 2rem;
   }
 }
 

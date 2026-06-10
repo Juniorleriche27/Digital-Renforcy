@@ -30,6 +30,8 @@ const trustStats = [
   { value: "0€", label: "frais cachés" },
 ];
 
+const contactFormWithPlan = (plan: string) => `/contact?plan=${plan}#contact-form`;
+
 const webPlans: PlanCard[] = [
   {
     name: "Site Essentiel",
@@ -51,7 +53,7 @@ const webPlans: PlanCard[] = [
       { label: "Chatbot IA", included: false },
     ],
     cta: "Choisir Essentiel",
-    href: `${contact.contactForm}?plan=web-essentiel`,
+    href: contactFormWithPlan("web-essentiel"),
     accent: "blue",
   },
   {
@@ -75,7 +77,7 @@ const webPlans: PlanCard[] = [
       { label: "Rapport mensuel de performance", included: true },
     ],
     cta: "Choisir Pro",
-    href: `${contact.contactForm}?plan=web-pro`,
+    href: contactFormWithPlan("web-pro"),
     highlighted: true,
     accent: "blue",
   },
@@ -112,7 +114,7 @@ const acquisitionPlans: PlanCard[] = [
       { label: "Tunnels multi-étapes", included: false },
     ],
     cta: "Démarrer l'acquisition",
-    href: `${contact.contactForm}?plan=acq-starter`,
+    href: contactFormWithPlan("acq-starter"),
     accent: "orange",
   },
   {
@@ -134,7 +136,7 @@ const acquisitionPlans: PlanCard[] = [
       { label: "Support prioritaire dédié", included: true },
     ],
     cta: "Démarrer Acquisition Pro",
-    href: `${contact.contactForm}?plan=acq-growth`,
+    href: contactFormWithPlan("acq-growth"),
     highlighted: true,
     accent: "green",
   },
@@ -369,7 +371,7 @@ export default function PricingPage() {
               </article>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <Link href={`${contact.contactForm}?plan=combo`} className="btn-primary">
+                <Link href={contactFormWithPlan("combo")} className="btn-primary">
                   Devis combiné gratuit
                 </Link>
                 <Link href={contact.contactForm} className="btn-outline">

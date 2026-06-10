@@ -11,8 +11,8 @@ import BadgeTypewriter from "@/components/BadgeTypewriter";
 
 export default function Hero() {
   return (
-    <section className="dark-section pb-12 pt-16 md:pb-16 md:pt-24">
-      <div className="container-shell grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+    <section className="hero-section dark-section pb-8 pt-6 sm:pt-8 md:pb-10 md:pt-10 lg:min-h-[calc(100svh-76px)] lg:py-8">
+      <div className="container-shell grid items-center gap-7 lg:min-h-[calc(100svh-140px)] lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         <div>
           {/* Badge */}
           <span className="badge-chip">
@@ -24,7 +24,7 @@ export default function Hero() {
           </span>
 
           {/* Heading — Syne font for max visual impact */}
-          <h1 className="mt-7 max-w-3xl font-display text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-slate-100 sm:text-5xl md:text-6xl lg:text-[4.25rem]">
+          <h1 className="mt-5 max-w-3xl font-display text-4xl font-bold leading-[1.04] tracking-[-0.02em] text-slate-100 sm:text-5xl md:text-6xl lg:text-[3.85rem]">
             <span className="hero-line" style={{ "--line-delay": "0.35s" } as React.CSSProperties}>
               Innovation Digital
             </span>
@@ -37,7 +37,7 @@ export default function Hero() {
           </h1>
 
           <p
-            className="hero-fade-up mt-6 max-w-xl text-base leading-relaxed text-[#8aa5c8] sm:text-lg"
+            className="hero-fade-up mt-4 max-w-xl text-base leading-relaxed text-[#8aa5c8] sm:text-lg"
             style={{ "--fade-delay": "0.95s" } as React.CSSProperties}
           >
             Agence web hybride basée en France — nous combinons <strong className="font-semibold text-slate-200">développement web intelligent</strong> et systèmes d&apos;acquisition de clients automatisés
@@ -46,7 +46,7 @@ export default function Hero() {
 
           {/* CTAs */}
           <div
-            className="hero-fade-up mt-8 flex flex-wrap gap-3"
+            className="hero-fade-up mt-6 flex flex-wrap gap-3"
             style={{ "--fade-delay": "1.12s" } as React.CSSProperties}
           >
             <Link href={contact.contactForm} className="btn-primary">
@@ -62,7 +62,7 @@ export default function Hero() {
 
           {/* Tags */}
           <div
-            className="hero-fade-up mt-7 flex flex-wrap gap-2.5"
+            className="hero-fade-up mt-5 flex flex-wrap gap-2.5"
             style={{ "--fade-delay": "1.28s" } as React.CSSProperties}
           >
             {heroTags.map((tag, index) => (
@@ -82,7 +82,9 @@ export default function Hero() {
           </div>
         </div>
 
-        <DashboardCard />
+        <div className="hidden lg:block">
+          <DashboardCard />
+        </div>
       </div>
     </section>
   );
@@ -100,11 +102,11 @@ function DashboardCard() {
 
   return (
     <article
-      className="dark-card hero-float rounded-[28px]"
+      className="dark-card hero-float rounded-[24px]"
       style={{ boxShadow: "0 0 0 1px rgba(30,60,110,0.32) inset, 0 28px 60px -28px rgba(2,6,24,1), 0 0 80px -40px rgba(40,80,200,0.18)" }}
     >
       {/* Window chrome */}
-      <header className="flex items-center justify-between border-b border-[#1e3a60]/60 px-5 py-3.5">
+      <header className="flex items-center justify-between border-b border-[#1e3a60]/60 px-5 py-3">
         <div className="flex items-center gap-2 text-sm font-semibold text-slate-200 font-display">
           <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
           <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
@@ -120,8 +122,8 @@ function DashboardCard() {
       {/* KPI strip */}
       <div className="grid grid-cols-3 divide-x divide-[#1e3a60]/50">
         {dashboardKpis.map((kpi) => (
-          <div key={kpi.label} className="space-y-1.5 px-4 py-5 text-center">
-            <div className="hero-kpi-value text-3xl font-bold tracking-tight text-slate-100 md:text-4xl">
+          <div key={kpi.label} className="space-y-1 px-4 py-4 text-center">
+            <div className="hero-kpi-value text-3xl font-bold tracking-tight text-slate-100 md:text-[2rem]">
               {kpi.value}
             </div>
             <p className="text-[11px] font-medium uppercase tracking-wider text-[#6a88aa]">{kpi.label}</p>
@@ -130,7 +132,7 @@ function DashboardCard() {
         ))}
       </div>
 
-      <div className="space-y-5 px-6 py-5">
+      <div className="space-y-4 px-6 py-4">
         {/* Chart */}
         <div>
           <div className="mb-3 flex items-center justify-between">
@@ -144,7 +146,7 @@ function DashboardCard() {
               +28%
             </span>
           </div>
-          <div className="relative h-24 w-full">
+          <div className="relative h-20 w-full">
             <svg viewBox="0 0 400 100" className="h-full w-full overflow-visible">
               <defs>
                 <linearGradient id="heroAreaGradient" x1="0%" y1="0%" x2="0%" y2="100%">

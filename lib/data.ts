@@ -12,8 +12,8 @@ export const contact = {
   phone: "+33 6 35 32 04 40",
   phoneHref: "tel:+33635320440",
   whatsapp: "https://wa.me/33635320440",
-  calendly: "https://calendly.com/ibrahim-b-digitalrenforcy/30-minutes-de-discussion",
-  contactForm: "/contact",
+  calendly: "https://calendly.com/discussion-15-minutes-web-et-systeme-acquisition-de-clients/30-minutes-de-discussion",
+  contactForm: "/contact#contact-form",
   address: "78 Av. des Champs-Élysées\nBureau 326, 75008 Paris",
   email: "hello@digitalrenforcy.com",
 };
@@ -383,7 +383,7 @@ export const socialLinks = [
   { label: "Instagram", href: "https://www.instagram.com/digitalrenforcy", key: "ig" },
   { label: "YouTube", href: "https://www.youtube.com/@DigitalRenforcy-jd4ru", key: "yt" },
   { label: "TikTok", href: "https://www.tiktok.com/@digitalrenforcy", key: "tt" },
-  { label: "Calendly", href: "https://calendly.com/ibrahim-b-digitalrenforcy/30-minutes-de-discussion", key: "cal" },
+  { label: "Calendly", href: "https://calendly.com/discussion-15-minutes-web-et-systeme-acquisition-de-clients/30-minutes-de-discussion", key: "cal" },
 ];
 
 export const servicesOverviewStats = [
