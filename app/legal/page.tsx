@@ -24,7 +24,7 @@ export default function LegalPage() {
             <li><span className="text-slate-300 font-medium">SIRET :</span> 95302674700014</li>
             <li><span className="text-slate-300 font-medium">Adresse :</span> 78 Avenue des Champs-Élysées, Bureau 326, 75008 Paris, France</li>
             <li><span className="text-slate-300 font-medium">Téléphone :</span> +33 6 35 32 04 40</li>
-            <li><span className="text-slate-300 font-medium">Email :</span> <a href="mailto:hello@digitalrenforcy.com" className="text-[#6694ff] hover:underline">hello@digitalrenforcy.com</a></li>
+            <li><span className="text-slate-300 font-medium">Email :</span> <a href="mailto:contact@digitalrenforcy.com" className="text-[#6694ff] hover:underline">contact@digitalrenforcy.com</a></li>
             <li><span className="text-slate-300 font-medium">Site web :</span> www.digitalrenforcy.com</li>
             <li className="pt-2 text-[#8aa5c8]">Non assujetti à la TVA — Franchise en base de TVA conformément à l&apos;article 293 B du Code général des impôts.</li>
           </ul>

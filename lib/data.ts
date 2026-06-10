@@ -15,7 +15,7 @@ export const contact = {
   calendly: "https://calendly.com/discussion-15-minutes-web-et-systeme-acquisition-de-clients/30-minutes-de-discussion",
   contactForm: "/contact#contact-form",
   address: "78 Av. des Champs-Élysées\nBureau 326, 75008 Paris",
-  email: "hello@digitalrenforcy.com",
+  email: "contact@digitalrenforcy.com",
 };
 
 export const heroTags = [

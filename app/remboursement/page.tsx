@@ -40,7 +40,7 @@ export default function RemboursementPage() {
         <section className="rounded-2xl border border-[#1e3a60]/60 bg-[#0c1830]/60 p-6">
           <h2 className="font-display text-sm font-bold uppercase tracking-widest text-[#6694ff] mb-3">Art. 6 — Procédure de demande</h2>
           <div className="space-y-3 text-sm text-[#8aa5c8]">
-            <p>Toute demande doit être adressée à <a href="mailto:hello@digitalrenforcy.com" className="text-[#6694ff] hover:underline">hello@digitalrenforcy.com</a> en précisant :</p>
+            <p>Toute demande doit être adressée à <a href="mailto:contact@digitalrenforcy.com" className="text-[#6694ff] hover:underline">contact@digitalrenforcy.com</a> en précisant :</p>
             <ul className="list-disc list-inside space-y-1 pl-2">
               <li>Nom et prénom du Client</li>
               <li>Référence du devis ou de la facture</li>

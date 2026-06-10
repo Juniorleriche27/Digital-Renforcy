@@ -18,7 +18,7 @@ export default function PrivacyPage() {
             <li><span className="text-slate-300 font-medium">Ibrahim BAMBA</span> — Entrepreneur individuel</li>
             <li><span className="text-slate-300 font-medium">SIRET :</span> 95302674700014</li>
             <li><span className="text-slate-300 font-medium">Adresse :</span> 78 Avenue des Champs-Élysées, Bureau 326, 75008 Paris, France</li>
-            <li><span className="text-slate-300 font-medium">Email :</span> <a href="mailto:hello@digitalrenforcy.com" className="text-[#6694ff] hover:underline">hello@digitalrenforcy.com</a></li>
+            <li><span className="text-slate-300 font-medium">Email :</span> <a href="mailto:contact@digitalrenforcy.com" className="text-[#6694ff] hover:underline">contact@digitalrenforcy.com</a></li>
             <li><span className="text-slate-300 font-medium">Téléphone :</span> +33 6 35 32 04 40</li>
           </ul>
         </section>
@@ -92,7 +92,7 @@ export default function PrivacyPage() {
               <p>Limiter le traitement dans certaines circonstances.</p>
             </div>
           </div>
-          <p className="mt-4 text-sm text-[#8aa5c8]">Pour exercer ces droits : <a href="mailto:hello@digitalrenforcy.com" className="text-[#6694ff] hover:underline">hello@digitalrenforcy.com</a> — Réponse sous 1 mois. En cas de litige, vous pouvez saisir la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-[#6694ff] hover:underline">CNIL</a>.</p>
+          <p className="mt-4 text-sm text-[#8aa5c8]">Pour exercer ces droits : <a href="mailto:contact@digitalrenforcy.com" className="text-[#6694ff] hover:underline">contact@digitalrenforcy.com</a> — Réponse sous 1 mois. En cas de litige, vous pouvez saisir la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-[#6694ff] hover:underline">CNIL</a>.</p>
         </section>
 
         <section className="rounded-2xl border border-[#1e3a60]/60 bg-[#0c1830]/60 p-6">
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
 
         <section className="rounded-2xl border border-[#1e3a60]/60 bg-[#0c1830]/60 p-6">
           <h2 className="font-display text-sm font-bold uppercase tracking-widest text-[#6694ff] mb-4">Art. 8 — Mineurs</h2>
-          <p className="text-sm text-[#8aa5c8]">Le site n&apos;est pas destiné aux personnes de moins de 16 ans. Aucune collecte sciemment effectuée auprès de mineurs. Contactez <a href="mailto:hello@digitalrenforcy.com" className="text-[#6694ff] hover:underline">hello@digitalrenforcy.com</a> pour toute demande de suppression.</p>
+          <p className="text-sm text-[#8aa5c8]">Le site n&apos;est pas destiné aux personnes de moins de 16 ans. Aucune collecte sciemment effectuée auprès de mineurs. Contactez <a href="mailto:contact@digitalrenforcy.com" className="text-[#6694ff] hover:underline">contact@digitalrenforcy.com</a> pour toute demande de suppression.</p>
         </section>
 
         <section className="rounded-2xl border border-[#1e3a60]/60 bg-[#0c1830]/60 p-6">

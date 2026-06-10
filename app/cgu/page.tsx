@@ -23,7 +23,7 @@ export default function CguPage() {
             <li><span className="text-slate-300 font-medium">Ibrahim BAMBA</span> — Entrepreneur individuel, Auto-entrepreneur</li>
             <li><span className="text-slate-300 font-medium">SIRET :</span> 95302674700014 — Code APE : 6201Z</li>
             <li><span className="text-slate-300 font-medium">Adresse :</span> 78 Avenue des Champs-Élysées, Bureau 326, 75008 Paris, France</li>
-            <li><span className="text-slate-300 font-medium">Email :</span> <a href="mailto:hello@digitalrenforcy.com" className="text-[#6694ff] hover:underline">hello@digitalrenforcy.com</a></li>
+            <li><span className="text-slate-300 font-medium">Email :</span> <a href="mailto:contact@digitalrenforcy.com" className="text-[#6694ff] hover:underline">contact@digitalrenforcy.com</a></li>
             <li><span className="text-slate-300 font-medium">Téléphone :</span> +33 6 35 32 04 40</li>
           </ul>
         </section>
@@ -101,7 +101,7 @@ export default function CguPage() {
         <section className="rounded-2xl border border-[#1e3a60]/60 bg-[#0c1830]/60 p-6">
           <h2 className="font-display text-sm font-bold uppercase tracking-widest text-[#6694ff] mb-3">Art. 10 — Droit de rétractation</h2>
           <div className="space-y-3 text-sm text-[#8aa5c8]">
-            <p><span className="text-slate-300 font-medium">Clients particuliers :</span> délai légal de 14 jours calendaires (art. L.221-18 C. conso.). Notification par email à <a href="mailto:hello@digitalrenforcy.com" className="text-[#6694ff] hover:underline">hello@digitalrenforcy.com</a>. Remboursement intégral sous 14 jours.</p>
+            <p><span className="text-slate-300 font-medium">Clients particuliers :</span> délai légal de 14 jours calendaires (art. L.221-18 C. conso.). Notification par email à <a href="mailto:contact@digitalrenforcy.com" className="text-[#6694ff] hover:underline">contact@digitalrenforcy.com</a>. Remboursement intégral sous 14 jours.</p>
             <p><span className="text-slate-300 font-medium">Exception :</span> aucun droit de rétractation pour les services pleinement exécutés avec l&apos;accord préalable exprès du Client (art. L.221-28 C. conso.).</p>
             <p><span className="text-slate-300 font-medium">Clients professionnels (B2B) :</span> droit de rétractation non applicable.</p>
           </div>
