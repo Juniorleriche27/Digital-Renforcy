@@ -3,6 +3,11 @@
 import type { FormEvent } from "react";
 import { useState } from "react";
 import { pricingCards } from "@/lib/data";
+import {
+  isValidInternationalPhone,
+  normalizeInternationalPhone,
+  PHONE_WITH_COUNTRY_CODE_MESSAGE,
+} from "@/lib/phone";
 
 type LeadForm = {
   name: string;
@@ -21,10 +26,17 @@ export default function PricingLeadFormSection() {
     setErrorMessage("");
 
     try {
+      if (!isValidInternationalPhone(form.phone)) {
+        throw new Error(PHONE_WITH_COUNTRY_CODE_MESSAGE);
+      }
+
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          ...form,
+          phone: normalizeInternationalPhone(form.phone),
+        }),
       });
 
       if (!response.ok) {
@@ -114,11 +126,15 @@ export default function PricingLeadFormSection() {
                   id="lead-phone"
                   required
                   type="tel"
-                  placeholder="06 XX XX XX XX"
+                  inputMode="tel"
+                  placeholder="+225 07 00 00 00 00"
                   value={form.phone}
                   onChange={(event) => setForm({ ...form, phone: event.target.value })}
                   className="mt-2 w-full rounded-xl border border-[#315a86] bg-[#1a3456] px-4 py-3 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#4a84ff] md:text-base lg:text-lg"
                 />
+                {form.phone.trim() !== "" && !isValidInternationalPhone(form.phone) ? (
+                  <p className="mt-2 text-xs text-rose-400">{PHONE_WITH_COUNTRY_CODE_MESSAGE}</p>
+                ) : null}
               </div>
 
               <div className="md:col-span-2">

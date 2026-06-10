@@ -2,6 +2,11 @@
 
 import { useState } from "react";
 import { contact } from "@/lib/data";
+import {
+  isValidInternationalPhone,
+  normalizeInternationalPhone,
+  PHONE_WITH_COUNTRY_CODE_MESSAGE,
+} from "@/lib/phone";
 
 const SERVICES = [
   { id: "web", label: "Développement Web", icon: "🌐", desc: "Site vitrine, e-commerce, application web sur mesure" },
@@ -86,7 +91,14 @@ export default function ContactMultiStepForm() {
 
   const canProceed = (): boolean => {
     if (step === 1) return form.service !== "";
-    if (step === 3) return form.first_name.trim() !== "" && form.last_name.trim() !== "" && form.email.trim() !== "";
+    if (step === 3) {
+      return (
+        form.first_name.trim() !== "" &&
+        form.last_name.trim() !== "" &&
+        form.email.trim() !== "" &&
+        (form.phone.trim() === "" || isValidInternationalPhone(form.phone))
+      );
+    }
     if (step === 4) return form.consent;
     return true;
   };
@@ -95,6 +107,12 @@ export default function ContactMultiStepForm() {
     setStatus("submitting");
     setErrorMsg("");
     try {
+      const normalizedPhone = normalizeInternationalPhone(form.phone);
+
+      if (form.phone.trim() !== "" && !isValidInternationalPhone(form.phone)) {
+        throw new Error(PHONE_WITH_COUNTRY_CODE_MESSAGE);
+      }
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -103,7 +121,7 @@ export default function ContactMultiStepForm() {
           first_name: form.first_name,
           last_name: form.last_name,
           email: form.email,
-          phone: form.phone,
+          phone: normalizedPhone,
           sector: form.secteur === "Autre" && form.secteur_autre ? form.secteur_autre : (form.secteur || "autre"),
           service: form.service,
           formule: form.formule,
@@ -321,8 +339,11 @@ export default function ContactMultiStepForm() {
               </div>
               <div>
                 <label htmlFor="phone" className={lbl}>Téléphone</label>
-                <input id="phone" type="tel" placeholder="06 XX XX XX XX" value={form.phone}
+                <input id="phone" type="tel" inputMode="tel" placeholder="+225 07 00 00 00 00" value={form.phone}
                   onChange={(e) => set("phone", e.target.value)} className={inp} />
+                {form.phone.trim() !== "" && !isValidInternationalPhone(form.phone) && (
+                  <p className="mt-2 text-xs text-rose-400">{PHONE_WITH_COUNTRY_CODE_MESSAGE}</p>
+                )}
               </div>
             </div>
 
